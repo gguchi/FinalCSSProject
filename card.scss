@@ -1,0 +1,64 @@
+// colors
+$white: #FFFFFF;
+$card-title: #262626;
+$card-border: #F6F7F8;
+$price: #FD2E2E;
+$price-discounted: #E5E5E5;
+$star: #ECD345;
+$star-gray: #BDBDBD;
+
+.card {
+    height: 350px;
+    width: 270px;
+    border: 1px solid $card-border;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        height: 153px;
+        width: 236px;
+        background-image: url("50061505_575246.png");
+        background-size: cover;
+        margin: 30px 17px 0 17px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        color: $card-title;
+        font-size: 14px;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        height: 10px;
+
+        &--yellow {
+            color: $star;
+        }
+
+        &--gray {
+            color: $star-gray;
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 16px;
+
+        &--discounted {
+            color: $price;
+        }
+
+        &--original {
+            margin-left: 15px;
+            color: $price-discounted;
+        }
+    }
+}
