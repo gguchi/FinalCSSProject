@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 // colors
 $white: #FFFFFF;
 $card-title: #262626;
@@ -6,6 +15,7 @@ $price: #FD2E2E;
 $price-discounted: #E5E5E5;
 $star: #ECD345;
 $star-gray: #BDBDBD;
+$family: 'Proxima Nova Rg';
 
 .card {
     height: 350px;
@@ -28,6 +38,8 @@ $star-gray: #BDBDBD;
         justify-content: center;
         margin-top: 40px;
         color: $card-title;
+        font-family: $family;
+        font-weight: 600;
         font-size: 14px;
     }
 
@@ -50,6 +62,7 @@ $star-gray: #BDBDBD;
         display: flex;
         justify-content: center;
         margin-top: 20px;
+        font-family: $family;
         font-size: 16px;
 
         &--discounted {
@@ -59,6 +72,7 @@ $star-gray: #BDBDBD;
         &--original {
             margin-left: 15px;
             color: $price-discounted;
+            text-decoration: line-through;
         }
     }
 }
