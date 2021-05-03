@@ -1,5 +1,13 @@
+@import "card.scss";
+
 $body-margin: 0px 150px 0 150px;
 $marker: 1px solid black;
+
+body{
+
+    font-family: $family;
+
+}
 
 .header{
 
@@ -45,6 +53,20 @@ $marker: 1px solid black;
 
     display: flex;
     justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+
+    .first{
+
+        color: #2E2E2E;
+
+    }
+
+    .last{
+
+        color: #FD2E2E;
+
+    }
 
 }
 
@@ -52,11 +74,21 @@ $marker: 1px solid black;
 
     display: flex;
     justify-content: center;
+    padding: 40px 0 40px 0px;
 
     a{
 
         text-decoration: none;
-        margin: 0px 10px 0 10px;
+        margin: 0px 40px 0 40px;
+        font-weight: semibold;
+        color: #22262A;
+        font-weight: bolder;
+
+        &:hover{
+
+            color: #33A0FF;
+
+        }
 
     }
 
@@ -65,28 +97,62 @@ $marker: 1px solid black;
 .header_banner{
 
     display: flex;
+    background-color: red;
+    background-image: url(/images/iphone1.png);
+    background-repeat: no-repeat;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     height: 450px;
-    background-color: blue;
     margin: 0;
 
-    h1,p{
+    
+    h1,p,a{
 
-        margin: 0 0 0 300px;
+        margin: 0 0 0 200px;
         display: flex;
-        flex-basis: 100%;
         align-self: flex-start;
         align-content: center;
 
     }
-    p{
 
-        width: 200px;
+    .header_banner_text{
+
+        flex-direction: column;
+        color: #FFFFFF;
+
+        h1{
+
+            font-size: 32px;
+
+        }
+            
+        p{
+
+            margin-top:40px;
+            font-size: 14px;
+            width: 200px;
+
+        }
+
+        a{
+
+            font-size: 14px;
+            font-weight: bold;
+    
+        }
 
     }
 
+    .header_banner_image{
+
+        display: flex;
+        flex-basis: 50%;
+        align-self: flex-end;
+        justify-content: flex-end;
+        border: $marker;
+
+    }
 }
 
 
@@ -128,6 +194,7 @@ $marker: 1px solid black;
 
         display: flex;
         flex-direction: row;
+        
 
     }
     .footer_header{
@@ -141,20 +208,130 @@ $marker: 1px solid black;
         
         display: flex;
         flex-direction: column;
-        flex-basis: 33%;
+        flex-basis: 25%;
+        padding: auto;
+
+        h3{
+
+            color: gray;
+            font-size: 32px;
+
+        }
 
         .footer_text{
 
             display: flex;
+            font-size: 12px;
 
         }
         
+    }
+
+    .social_media , .contact{
+
+        padding: 50px 30px 0 30px;
+        justify-content: flex-start;
+
+        .smLogo{
+
+            display: flex;
+            flex-basis: 50%;
+            justify-content: flex-start;
+
+            .webLogo{
+
+                flex-basis: 10%;
+
+                i{
+
+                    color: #03A9F4;
+
+                }
+
+            }
+
+        }
+
+        h2{
+
+            font-size: 18px;
+
+        }
+        p{
+
+            font-size: 12px;
+
+        }
+
     }
 
     .lower{
 
         display: flex;
         flex-direction: row;
+        border-top: 1px solid lightgray;
+        padding-top: 40px;
+        margin: 50px 50px 50px 50px;
+
+        
+        ul{
+
+            padding: 0px 35px 0px 35px;
+
+        }
+
+        .footer_list{
+
+            list-style-type: none;
+            margin: 0px;
+
+            h4, li{
+
+                padding: 10px 0px 10px 0px;
+
+            }
+
+            h4{
+
+                font-size: 18px;
+
+            }
+
+            li{
+
+                font-size: 14px;
+
+            }
+
+        }
+
+    }
+
+    .payment{
+
+        border-top: 1px solid lightgray;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: row;
+        padding: 25px 100px 0 70px;
+
+        p{
+
+            font-size: 14px;
+            color: #C1C8CE;
+            flex-basis: 50%;
+
+        }
+        .payment__option{
+
+            display: flex;
+            justify-content: flex-end;
+            flex-basis: 100%;
+            flex-direction: row;
+            list-style-type: none;
+
+
+        }
 
     }
 
