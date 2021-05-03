@@ -17,6 +17,10 @@ $star: #ECD345;
 $star-gray: #BDBDBD;
 $family: 'Proxima Nova Rg';
 
+.container {
+    display: flex;
+}
+
 .card {
     height: 350px;
     width: 270px;
@@ -31,6 +35,11 @@ $family: 'Proxima Nova Rg';
         background-image: url("50061505_575246.png");
         background-size: cover;
         margin: 30px 17px 0 17px;
+
+        &:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
     }
 
     &__title {

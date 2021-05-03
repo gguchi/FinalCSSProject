@@ -6,6 +6,12 @@
   font-display: swap;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .card {
   height: 350px;
   width: 270px;
@@ -26,6 +32,11 @@
   background-image: url("50061505_575246.png");
   background-size: cover;
   margin: 30px 17px 0 17px;
+}
+
+.card__image:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
 
 .card__title {
