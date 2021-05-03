@@ -6,7 +6,6 @@ $marker: 1px solid black;
     display: flex;
     align-items: center;
     margin: $body-margin;
-    border: $marker;
 
     .language{
 
@@ -90,29 +89,7 @@ $marker: 1px solid black;
 
 }
 
-.section .main{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: $body-margin;
-
-    .banner{
-
-        display: flex;
-        border: $marker;
-        justify-content: center;
-
-
-    }
-
-    .header_banner{
-
-        margin: 0 -150px 0 -150px;
-
-    }
-
-}
 
 .section{
 
@@ -120,15 +97,24 @@ $marker: 1px solid black;
     display: flex;
     justify-content: center;
     
+    .main{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .services{
 
         display: flex;
         flex-direction: column;
         width: 200px;
         height: 150px;
-        border: $marker;
 
     }
+
 
 }
 
@@ -136,12 +122,39 @@ $marker: 1px solid black;
 
     display: flex;
     flex-direction: column;
-    margin: $body-margin;
-    border: $marker;
+    margin: 0px 100px 0px 100px;
 
-    ._header{
+    .upper{
 
-        border: $marker;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .footer_header{
+
+        display: flex;
+        flex-basis: 20%;
+
+    }
+
+    .footer_description{
+        
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33%;
+
+        .footer_text{
+
+            display: flex;
+
+        }
+        
+    }
+
+    .lower{
+
+        display: flex;
+        flex-direction: row;
 
     }
 
