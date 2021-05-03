@@ -10,6 +10,10 @@
 $news-date: #C1C8CE;
 $news-title: #22262A;
 
+.container {
+    display: flex;
+}
+
 .news {
     width: 320px;
     height: 140px;
@@ -18,8 +22,6 @@ $news-title: #22262A;
     &__image {
         width: 140px;
         height: 140px;
-        background-image: url('images/Rectangle 1 copy 25.png');
-        background-size: cover;
     }
 
     &__details {

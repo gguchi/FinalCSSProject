@@ -6,6 +6,12 @@
   font-display: swap;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .news {
   width: 320px;
   height: 140px;
@@ -17,8 +23,6 @@
 .news__image {
   width: 140px;
   height: 140px;
-  background-image: url("images/Rectangle 1 copy 25.png");
-  background-size: cover;
 }
 
 .news__details {
