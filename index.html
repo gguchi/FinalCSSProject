@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     
     <title>Document</title>
 </head>
@@ -13,13 +17,13 @@
 
     <header class="header">
 
-        <div class="header langauge">
+        <div class="language_switcher">
 
             <select name="language_list" id="language">
                 <option value="english">ENG</option>
             </select>
 
-            <select name="currency" id="currency">
+            <select name="currency_list" id="currency">
                 <option value="english">USD</option>
             </select>
 
@@ -27,38 +31,112 @@
 
         <div class="session_details">
 
-            <div class="profile">My profile</div>
-            <div class="basket">Items
+            <div class="profile">    
+                <i class="far fa-user"></i>
+                My profile 
+            </div>
+            <div class="basket">
+                <i class="far fa-shopping-basket"></i>
+                Items
                 <div class="cost">$0.00</div>
+            </div>
+
+            <div class="session_search">
+                <input type="text" name="search" class="session_search_box">
+                <button type="submit"><i class="fas fa-search"></i></button>
             </div>
 
         </div>
 
     </header>
 
-    <section class="logo">
+    <section class="navigation_banner">
+        <section class="logo">
 
-        <h1>RAKUTECH</h1>
+            <h1 class="first">RAKU</h1><h1 class="last">TECH</h1>
 
+        </section>
+
+        <nav class="navigation_bar">
+
+            <ul>
+                <li class="dropdown"> 
+                    <a href="javascript:void(0)" class="dropbtn">HOME</a> 
+                        <div class="dropdown_content">
+
+                            <div class="content_container">
+
+                                <h2>Category</h2>
+                                <a href="#">Airport & Wireless</a>
+                                <a href="#">Apple Care</a>
+                                <a href="#">Bags, Shells & Sleeves</a>
+                                <a href="#">Business & Security</a>
+                                <a href="#">Cables & Docks</a>
+                                <a href="#">Camera & Videos</a>
+                                <a href="#">Car & Travel</a>
+                                <a href="#">Cases & Films</a>
+
+                            </div>
+                            
+                            <div class="content_container second">
+
+                                <h2>Category</h2>
+                                <a href="#">Chargin Devices</a>
+                                <a href="#">Connected Home</a>
+                                <a href="#">Device Care</a>
+                                <a href="#">Display & Graphic</a>
+                                <a href="#">Fitness & Sport</a>
+                                <a href="#">Headphones</a>
+                                <a href="#">Healthkit</a>
+                            
+                            </div>
+
+                            <div class="content_container third">
+
+                                <h2>Category</h2>
+                                <a href="#">Mice & Keyboards</a>
+                                <a href="#">Music Creation</a>
+                                <a href="#">Networking & Server</a>
+                            
+                            </div>
+                </li>
+                <li> <a href="">STORE</a></li>
+                <li> <a href="">IPHONE</a> </li>
+                <li> <a href="">IPAD</a> </li>
+                <li> <a href="">MACBOOK</a></li>
+                <li> <a href="">ACCESSORIES</a> </li>
+        
+            </ul>
+
+        </nav>
     </section>
 
-    <nav class="navigation_bar">
+    <section class="product_banner">
 
-        <a href="">HOME</a>
-        <a href="">STORE</a>
-        <a href="">IPHONE</a>
-        <a href="">IPAD</a>
-        <a href="">MACBOOK</a>
-        <a href="">ACCESSORIES</a>    
+        <div class="product_previous">
 
-    </nav>
+            <i class="fal fa-chevron-left"></i>
 
-    <section class="header_banner">
+        </div>
 
-        <div class="header_banner text">
+        <div class="product_banner_text">
 
             <h1>iPhone X</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum eligendi placeat amet velit consequatur rem.</p>
+
+            <a href="">MORE</a>
+
+        </div>
+
+        <div class="product_banner_image">
+
+            <img src="/images/iphone1.png" alt="">
+
+        </div>
+
+        <div class="product_next">
+
+            <i class="fal fa-chevron-right"></i>
 
         </div>
 
@@ -67,61 +145,202 @@
     <!-- END OF HEADER  -->
     <!-- START OF BODY -->
 
-    <section class="section main">
+    <section class="main_body">
 
         <h3>BEST SELLER</h3>
-       <div class="main_navigation navigation_bar">
+       <div class="navigation_bar">
         
-            <a href="">HOME</a>
+            <a href="">All</a>
+            <a href="">Mac</a>
+            <a href="">iPhone</a>
+            <a href="">iPad</a>
+            <a href="">iPod</a>
+            <a href="">Accessories</a>    
+
+       </div>
+
+       <!-- INSERT CARDS -->
+
+       <a href="load_more" class="load_product">LOAD MORE</a>
+
+    </section>
+
+    <section class="product_banner_sub">
+
+        <div class="product_banner_text_sub">
+
+            <h1>iPhone 6 Plus</h1>
+            <p>Performance and Design. Taken right to the edge.</p>
+
+            <a href=""> SHOP NOW</a>
+
+        </div>
+
+        <div class="product_banner_image_sub">
+
+            <img src="/images/iPhone6.png" alt="">
+
+        </div>
+
+    </section>
+
+    <section class="services">
+
+        <div class="services_benenfit">
+
+            <!-- SERVICES HERE -->
+            
+        </div>
+
+    </section>
+
+    <section class="news"> 
+        <h3>LATEST NEWS</h3>
+    </section>
+
+    <section class="featured_products"> 
+        <h3>FEATURED PRODUCTS</h3> 
+    </section>
+
+    <div class="page_search">
+
+        <input type="text" placeholder="Search query..." name="search" class="page_search_box">
+        <button type="submit" class="search_button">SEARCH</button>
+
+    </div>
+
+    <section class="footer">
+        <div class="footer upper">
+        <div class="footer_description"> <h3>RAKUTECH</h3> 
+            <div class="footer_text"> 
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eum et doloribus perferendis aspernatur alias odio tempore at, 
+                    assumenda consequuntur sed aliquam totam, 
+                    expedita corrupti so    luta architecto. Eos quisquam vitae quidem? </p>
+                </div>
+            </div>
+
+            <div class="social_media">
+                
+                <h2> Follow Us </h2>
+                <p>Since the 1500, when an unkown printer took a gallery of type and scrambled.</p>
+                
+                <div class="smLogo">
+                    <div class="webLogo 1"><i class="fab fa-facebook-f"></i></div>
+                    <div class="webLogo 2"> <i class="fab fa-twitter"></i></div>
+                </div>
+
+            </div>
+
+            <div class="contact">
+                
+                <h2>Contact Us</h2>
+                <p>My Company , 4578 Marmora Road, Glasgow <br> D04 89GR <br> Call us now: 0123-456-789 <br> Email: support@whatever.com</p>
+            
+            </div>
+        </div>
+
+        <div class="footer lower">
+
+            <ul class="footer_list information">
+                
+                <h4>Information</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list services">
+                
+                <h4>Services</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list extras">
+                
+                <h4>Extras</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list account">
+                
+                <h4>My Account</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list links">
+                
+                <h4>Useful Links</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list offers">
+                
+                <h4>Our Offers</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+        </div>
+
+        <div class="payment">
+
+            <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
+
+            <ul class="payment__option">
+
+                <li><img src="/images/Western-union.png" alt=""></li>
+                <li><img src="/images/Group 19.png" alt=""></li>
+                <li><img src="/images/Paypal.png" alt=""></li>
+                <li><img src="/images/visa.jpg" alt=""></li>
+
+            </ul>
+
+        </div>
+
+    </section>
+<!-- 
+    <div class="test">
+
+        <nav class="dropdown">
+            <a href="" class="dropbtn">HOME</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+
             <a href="">STORE</a>
             <a href="">IPHONE</a>
             <a href="">IPAD</a>
             <a href="">MACBOOK</a>
             <a href="">ACCESSORIES</a>    
 
-       </div>
+        </nav>
 
-       <!-- INSERT CARDS -->
-
-       <a href="load_more">LOAD MORE</a>
-
-    </section>
-
-    <section class="main header_banner">
-
-        <div class="header_banner text">
-
-            <h1>iPhone 6 Plus</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum eligendi placeat amet velit consequatur rem.</p>
-
-        </div>
-
-    </section>
-
-    <section class="section service">
-
-        <div class="services">
-
-            <div class="services logo"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, enim commodi.</p>
-
-        </div>
-
-    </section>
-
-    <section class="section service"> <h3>LATEST NEWS</h3></section>
-
-    <section class="section products"> <h3>FEATURED PRODUCTS</h3></section>
-
-    <section class="footer">
-
-        <div class="footer_header"> <h3>RAKUTECH</h3> </div>
-        <div class="footer_description"> 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et doloribus perferendis aspernatur alias odio tempore at, assumenda consequuntur sed aliquam totam, expedita corrupti soluta architecto. Eos quisquam vitae quidem? </p></div>
-
-
-    </section>
-
+    </div>
+ -->
 
 </body>
 </html>
