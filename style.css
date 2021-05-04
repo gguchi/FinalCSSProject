@@ -889,18 +889,96 @@ body {
   height: 1000px;
 }
 
-.newsletter .page_search_box {
-  border: 2px solid #F6F7F8;
-  width: 600px;
-  height: 60px;
+.newsletter_container {
+  top: 0;
+  z-index: 10;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
-.newsletter .search_button {
+.newsletter_container .newsletter {
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 960px;
+  height: 480px;
+}
+
+.newsletter_container .newsletter .form_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.newsletter_container .newsletter .form_side .email_box {
+  padding-top: 100px;
+}
+
+.newsletter_container .newsletter .form_side .email_box .page_search_box {
+  border: 2px solid #F6F7F8;
+  width: 169px;
+  height: 60px;
+  margin: 0% auto;
+  padding: 0%;
+}
+
+.newsletter_container .newsletter .form_side .email_box .search_button {
   background-color: #2E90E5;
-  width: 120px;
+  color: #FFFFFF;
+  width: 160px;
   border: 1px solid transparent;
   border-top-right-radius: 5%;
   border-bottom-right-radius: 5%;
+  height: 60px;
+  margin: 0% auto;
+  padding: 0%;
+}
+
+.newsletter_container .newsletter .form_side h2 {
+  font-size: 48px;
+}
+
+.newsletter_container .newsletter .form_side p {
+  font-size: 16px;
+}
+
+.newsletter_container .newsletter .form_side .check_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
 }
 
 ul {
