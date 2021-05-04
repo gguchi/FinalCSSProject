@@ -6,6 +6,8 @@
 $body-margin: 0px 350px 0 350px;
 $div-padding: 0px 350px 0 350px;
 $marker: 1px solid black;
+$background: #F6F7F8;
+$link-blue: #33A0FF;
 
 body{
 
@@ -160,7 +162,162 @@ body{
 
 }
 
+// Link Bar
 
+.link-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: $background;
+    font-family: 'Proxima Nova Rg';
+    font-size: 12px;
+
+    &__home {
+        margin-right: 10px;
+        color: $link-blue;
+    }
+
+    &__slash {
+        margin-right: 10px;
+    }
+
+    &__accessories {
+        margin-right: 10px;
+        color: $link-blue;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+}
+
+// Cart Details
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$text: #262626;
+$delete: #FF4252;
+$count: #33A0FF;
+$count-bg: #F6F7F8;
+
+.cart-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-size: 14px;
+    width: 900px;
+    border-bottom: 2px solid $count-bg;
+    padding-top: 50px;
+
+    &__product {
+        padding-right: 500px;
+    }
+
+    &__price {
+        padding-right: 50px;
+    }
+
+    &__qty {
+        padding-right: 50px;
+    }
+
+    &__unit {
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    .view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 900px;
+        border-bottom: 2px solid $count-bg;
+
+        &__delete {
+            font-size: 18px;
+            color: $delete;
+            margin-right: 40px;
+        }
+        
+        &__image {
+            margin-right: 40px;
+
+            .pic {
+                height: 80px;
+                width: 100px;
+            }
+        }
+
+        &__title {
+            font-family: 'Proxima Nova Rg';
+            font-weight: bold;
+            font-size: 16px;
+            color: $text;
+            margin-right: 40px;
+            width: 400px;
+        }
+
+        &__unit-price {
+            font-family: 'Proxima Nova Rg';
+            font-size: 16px;
+            color: $text;
+            margin-right: 40px;
+        }
+
+        .counter {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+    
+            &__button {
+                height: 40px;
+                width: 80px;
+                background-color: $count-bg;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 40px;
+    
+                &--minus {
+                    color: $count;
+                    font-size: 8px;
+                }
+                
+                &--count {
+                    font-family: 'Proxima Nova Rg';
+                    font-size: 16px;
+                    color: $text;
+                }
+                
+                &--plus {
+                    color: $count;
+                    font-size: 8px;
+                }
+            }
+        }
+
+        &__price {
+            font-family: 'Proxima Nova Rg';
+            font-size: 16px;
+            color: $text;
+            margin-right: 40px;
+        }
+    }
+}
 
 .product_banner{
 
@@ -362,65 +519,6 @@ body{
         z-index: -1;
 
     }
-}
-
-
-
-.news_container{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-
-    h3{
-
-        padding-bottom: 50px;
-
-    }
-
-
-}
-
-.featured_products{
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0 150px 0px;
-
-    .container{
-
-        margin-top: 50px;
-
-    }
-
-}
-
-.page_search{
-
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-
-    .page_search_box{
-
-        border: 2px solid #F6F7F8;
-        width: 600px;
-        height: 60px;
-
-    }
-
-    .search_button{
-
-        background-color:  #2E90E5;
-        width: 120px;
-        border: 1px solid transparent;
-        border-top-right-radius: 5%;
-        border-bottom-right-radius: 5%;
-    }
-
 }
 
 .footer{
