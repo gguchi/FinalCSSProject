@@ -750,16 +750,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 650px;
+  height: 600px;
   background-color: #2E90E5;
   margin: 0;
-  height: 600px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 300px 0 350px;
   z-index: -5;
   position: relative;
+}
+
+.product_banner_sub.small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
 }
 
 .product_banner_sub .product_banner_text_sub {
@@ -1156,6 +1162,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid black;
+  width: 500px;
 }
 
 .main_container .side_nav .category {
