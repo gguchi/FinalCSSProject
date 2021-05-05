@@ -13,8 +13,8 @@
 }
 
 .card {
-  height: 350px;
-  width: 270px;
+  height: 300px;
+  width: 230px;
   border: 1px solid #F6F7F8;
   border-radius: 10px;
   display: -webkit-box;
@@ -29,9 +29,11 @@
 .card__image {
   height: 153px;
   width: 236px;
-  background-image: url("50061505_575246.png");
-  background-size: cover;
   margin: 30px 17px 0 17px;
+}
+
+.card__image--pic {
+  width: 200px;
 }
 
 .card__image:hover {
@@ -46,7 +48,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin-top: 10px;
   color: #262626;
   font-family: "Proxima Nova Rg";
   font-weight: 600;
@@ -477,6 +479,577 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("fonts/ProximaNova-Regular.woff2") format("woff2"), url("fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-product__wrapper {
+  width: 630px;
+}
+
+.product {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__image {
+  height: 300px;
+  width: 300px;
+}
+
+.product__image .pic {
+  height: 250px;
+  width: 300px;
+}
+
+.product__image .image-set__item {
+  height: 60px;
+  width: 60px;
+  border: 2px solid #F6F7F8;
+  margin-top: 70px;
+}
+
+.product__image .image-set__item:hover {
+  border: 2px solid #006CFF;
+}
+
+.product__image .image-set__item--active {
+  border: 2px solid #006CFF;
+}
+
+.product__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__details--title {
+  font-size: 17px;
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  color: #22262A;
+  margin-top: 10px;
+}
+
+.product__details--rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F6F7F8;
+}
+
+.product__details--rating .rating__star--yellow {
+  color: #FFC600;
+}
+
+.product__details--rating .rating__star--gray {
+  color: #C1C8CE;
+}
+
+.product__details--rating .rating__reviews {
+  font-size: 14px;
+  font-family: 'Proxima Nova Rg';
+  color: #C1C8CE;
+  margin: 0 10px 0 10px;
+}
+
+.product__details--rating .rating__button {
+  font-size: 14px;
+  font-family: 'Proxima Nova Rg';
+}
+
+.product__details--rating .rating__button a {
+  color: #33A0FF;
+  text-decoration: none;
+}
+
+.product__details--rating .rating__button:hover {
+  background-color: #33A0FF;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.product__details--rating .rating__button:hover a {
+  color: white;
+}
+
+.product__details--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-family: 'Proxima Nova Rg';
+  margin-top: 10px;
+}
+
+.product__details--price-discounted {
+  color: #FD2E2E;
+}
+
+.product__details--price-original {
+  margin-left: 15px;
+  color: #E5E5E5;
+  text-decoration: line-through;
+}
+
+.product__details--summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  font-family: 'Proxima Nova Rg';
+  font-size: 14px;
+  color: #262626;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #F6F7F8;
+}
+
+.product__details--summary .availability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__details--summary .availability__text {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.product__details--summary .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.product__details--summary .category__text {
+  margin-right: 39px;
+  font-weight: bold;
+}
+
+.product__details--summary .shipping {
+  font-weight: bold;
+}
+
+.product__details--color {
+  font-family: 'Proxima Nova Rg';
+  font-size: 14px;
+  color: #262626;
+  font-weight: bold;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__details--color .circle__blue {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #378ff3;
+          box-shadow: 0 0 0 2px #378ff3;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__red {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__red:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #f16d6d;
+          box-shadow: 0 0 0 2px #f16d6d;
+}
+
+.product__details--color .circle__black {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__black:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px black;
+          box-shadow: 0 0 0 2px black;
+}
+
+.product__details--color .circle__yellow {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__yellow:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #f8f88f;
+          box-shadow: 0 0 0 2px #f8f88f;
+}
+
+.product__details--size {
+  font-family: 'Proxima Nova Rg';
+  font-size: 14px;
+  color: #262626;
+  font-weight: bold;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #F6F7F8;
+}
+
+.product__details .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #F6F7F8;
+}
+
+.product__details .options .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+}
+
+.product__details .options .counter__button {
+  height: 40px;
+  width: 80px;
+  background-color: #F6F7F8;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__details .options .counter__button--minus {
+  color: #006CFF;
+  font-size: 8px;
+}
+
+.product__details .options .counter__button--count {
+  font-family: 'Proxima Nova Rg';
+  font-size: 16px;
+  color: #262626;
+}
+
+.product__details .options .counter__button--plus {
+  color: #006CFF;
+  font-size: 8px;
+}
+
+.product__details .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+}
+
+.product__details .buttons__cart {
+  background-color: #F6F7F8;
+  border-radius: 5px;
+  color: #006CFF;
+  height: 40px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__details .buttons__cart--icon {
+  margin-right: 10px;
+}
+
+.product__details .buttons__cart:hover {
+  background-color: #006CFF;
+  color: #F6F7F8;
+  cursor: pointer;
+}
+
+.product__details .buttons__favorite {
+  background-color: #F6F7F8;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #006CFF;
+}
+
+.product__details .buttons__favorite:hover {
+  background-color: #006CFF;
+  color: #F6F7F8;
+  cursor: pointer;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.social__facebook {
+  height: 35px;
+  width: 155px;
+  border-radius: 5px;
+  background-color: #385C8E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Proxima Nova Rg';
+  font-size: 12px;
+  color: white;
+}
+
+.social__facebook--icon {
+  margin-right: 10px;
+}
+
+.social__facebook:hover {
+  background-color: white;
+  color: #385C8E;
+}
+
+.social__twitter {
+  height: 35px;
+  width: 155px;
+  border-radius: 5px;
+  background-color: #03A9F4;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Proxima Nova Rg';
+  font-size: 12px;
+  color: white;
+}
+
+.social__twitter--icon {
+  margin-right: 10px;
+}
+
+.social__twitter:hover {
+  background-color: white;
+  color: #03A9F4;
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+}
+
+.promo .best-seller {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'Proxima Nova Rg';
+  font-size: 18px;
+  font-weight: bold;
+  color: #C1C8CE;
+}
+
+.container-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.container-tab .tab {
+  width: 20px;
+  border-bottom: 3px solid #F1F3F4;
+  margin-right: 10px;
+}
+
+.container-tab .tab-active {
+  border-bottom: 3px solid #33A0FF;
+}
+
+.catalogue_item {
+  margin-top: 30px;
+  width: 230px;
+  background-color: #C1C8CE;
+}
+
+.catalogue_item .product_details {
+  margin: 20px;
+}
+
+.catalogue_item .pic {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.related {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  font-family: 'Proxima Nova Rg';
+  font-size: 30px;
+  font-weight: bold;
+  color: #22262A;
+  margin-top: 50px;
+}
+
+.related-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 100px;
+  border-bottom: 2px solid #F6F7F8;
+}
+
+.related-products .card {
+  margin-right: 20px;
+}
+
+.info {
+  background-color: #FAFAFB;
+}
+
+.info__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  border-bottom: 2px solid #F6F7F8;
+}
+
+.info__nav--product {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-size: 16px;
+  color: #2E90E5;
+  padding-right: 10px;
+}
+
+.info__nav--reviews {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-size: 16px;
+  color: #262626;
+  padding-right: 10px;
+}
+
+.info__nav--tab {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-size: 16px;
+  color: #262626;
+  padding-right: 10px;
+}
+
+.info__text {
+  font-family: 'Proxima Nova Rg';
+  font-size: 14px;
+  color: #262626;
+  margin-top: 20px;
+}
+
 .cart-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,282 +1079,6 @@ body {
 
 .cart-head__qty {
   padding-right: 50px;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .view {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 150px;
-  width: 900px;
-  border-bottom: 2px solid #F6F7F8;
-}
-
-.container .view__delete {
-  font-size: 18px;
-  color: #FF4252;
-  margin-right: 40px;
-}
-
-.container .view__image {
-  margin-right: 40px;
-}
-
-.container .view__image .pic {
-  height: 80px;
-  width: 100px;
-}
-
-.container .view__title {
-  font-family: 'Proxima Nova Rg';
-  font-weight: bold;
-  font-size: 16px;
-  color: #262626;
-  margin-right: 40px;
-  width: 400px;
-}
-
-.container .view__unit-price {
-  font-family: 'Proxima Nova Rg';
-  font-size: 16px;
-  color: #262626;
-  margin-right: 40px;
-}
-
-.container .view .counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 40px;
-}
-
-.container .view .counter__button {
-  height: 40px;
-  width: 80px;
-  background-color: #F6F7F8;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 40px;
-}
-
-.container .view .counter__button--minus {
-  color: #33A0FF;
-  font-size: 8px;
-}
-
-.container .view .counter__button--count {
-  font-family: 'Proxima Nova Rg';
-  font-size: 16px;
-  color: #262626;
-}
-
-.container .view .counter__button--plus {
-  color: #33A0FF;
-  font-size: 8px;
-}
-
-.container .view__price {
-  font-family: 'Proxima Nova Rg';
-  font-size: 16px;
-  color: #262626;
-  margin-right: 40px;
-}
-
-.container-checkout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 180px 50px 180px;
-}
-
-.container-checkout .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.container-checkout .search form input[type=text] {
-  padding: 4px;
-  height: 30px;
-  margin-top: 8px;
-  font-size: 14px;
-  border-right: none;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-  font-family: 'Proxima Nova Rg';
-  font-size: 14px;
-}
-
-.container-checkout .search form button {
-  float: right;
-  padding: 6px 10px;
-  height: 42px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #33A0FF;
-  font-size: 14px;
-  border: none;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-  cursor: pointer;
-  font-family: 'Proxima Nova Rg';
-  font-weight: bold;
-  color: white;
-}
-
-.container-checkout .checkout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 50px;
-  width: 200px;
-}
-
-.container-checkout .checkout .sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-family: 'Proxima Nova Rg';
-}
-
-.container-checkout .checkout .sub__text {
-  width: 100px;
-}
-
-.container-checkout .checkout .sub__price {
-  width: 100px;
-  text-align: right;
-}
-
-.container-checkout .checkout .shipping {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-family: 'Proxima Nova Rg';
-}
-
-.container-checkout .checkout .shipping__text {
-  width: 100px;
-}
-
-.container-checkout .checkout .shipping__price {
-  width: 100px;
-  text-align: right;
-}
-
-.container-checkout .checkout .coupon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 16px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #F6F7F8;
-  font-family: 'Proxima Nova Rg';
-}
-
-.container-checkout .checkout .coupon__text {
-  width: 100px;
-}
-
-.container-checkout .checkout .coupon__price {
-  width: 100px;
-  text-align: right;
-}
-
-.container-checkout .checkout .total {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Proxima Nova Rg';
-}
-
-.container-checkout .checkout .total__text {
-  width: 100px;
-  font-size: 30px;
-}
-
-.container-checkout .checkout .total__price {
-  width: 100px;
-  font-size: 30px;
-  text-align: right;
-}
-
-.container-checkout .checkout .checkout__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #33A0FF;
-  border-radius: 4px;
-  height: 40px;
-  width: 100%;
-  font-family: 'Proxima Nova Rg';
-}
-
-.container-checkout .checkout .checkout__button a {
-  color: white;
-  text-decoration: none;
 }
 
 .product_banner {
