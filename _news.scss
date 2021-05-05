@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$news-date: #C1C8CE;
+$news-title: #22262A;
+
+.container {
+    display: flex;
+}
+
+.news {
+    width: 320px;
+    height: 140px;
+    display: flex;
+
+    &__image {
+        width: 140px;
+        height: 140px;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px 10px 20px;
+
+        &--date {
+            font-family: 'Proxima Nova Rg';
+            color: $news-date;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        &--title {
+            font-family: 'Proxima Nova Rg';
+            color: $news-title;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        &--text {
+            font-family: 'Proxima Nova Rg';
+            color: $news-title;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+}

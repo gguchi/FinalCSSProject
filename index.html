@@ -1,12 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header class="header">
+
+        <div class="language_switcher">
+
+            <select name="language_list" id="language">
+                <option value="english">ENG</option>
+            </select>
+
+            <select name="currency_list" id="currency">
+                <option value="english">USD</option>
+            </select>
+
+        </div>
+
+        <div class="session_details">
+
+            <div class="profile">
+                <i class="far fa-user"></i>
+                My profile
+            </div>
+            <div class="basket">
+                <i class="far fa-shopping-basket"></i>
+                Items
+                <div class="cost">$0.00</div>
+            </div>
+
+            <div class="session_search">
+                <input type="text" name="search" class="session_search_box">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="navigation_banner">
+        <section class="logo">
+
+            <h1 class="first">RAKU</h1>
+            <h1 class="last">TECH</h1>
+
+        </section>
+
+        <nav class="navigation_bar">
+
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HOME</a>
+                    <div class="dropdown_content">
+
+                        <div class="dropdown_container">
+
+                            <div class="content_container">
+
+                                <h2>Category</h2>
+                                <a href="#">Airport & Wireless</a>
+                                <a href="#">Apple Care</a>
+                                <a href="#">Bags, Shells & Sleeves</a>
+                                <a href="#">Business & Security</a>
+                                <a href="#">Cables & Docks</a>
+
+                            </div>
+
+                            <div class="content_container sub">
+
+                                <a href="#">Camera & Videos</a>
+                                <a href="#">Car & Travel</a>
+                                <a href="#">Cases & Films</a>
+
+                            </div>
+
+                            <div class="content_container second">
+
+                                <h2>Category</h2>
+                                <a href="#">Chargin Devices</a>
+                                <a href="#">Connected Home</a>
+                                <a href="#">Device Care</a>
+                                <a href="#">Display & Graphic</a>
+                                <a href="#">Fitness & Sport</a>
+
+                            </div>
+
+                            <div class="content_container second_sub">
+
+                                <a href="#">Headphones</a>
+                                <a href="#">Healthkit</a>
+
+                            </div>
+
+                            <div class="content_container third">
+
+                                <h2>Category</h2>
+                                <a href="#">Mice & Keyboards</a>
+                                <a href="#">Music Creation</a>
+                                <a href="#">Networking & Server</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li> <a href="">STORE</a></li>
+                <li> <a href="">IPHONE</a> </li>
+                <li> <a href="">IPAD</a> </li>
+                <li> <a href="">MACBOOK</a></li>
+                <li> <a href="">ACCESSORIES</a> </li>
+
+            </ul>
+
+        </nav>
+    </section>
+
+    <section>
+        <div class="link-bar">
+            <div class="link-bar__home">
+                Home
+            </div>
+            <div class="link-bar__slash">
+                /
+            </div>
+            <div class="link-bar__accessories">
+                Accessories
+            </div>
+            <div class="link-bar__slash">
+                /
+            </div>
+            <div class="link-bar__title">
+                Beat Solo2 on Ear Headphones - Black
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="cart-head">
+                <div class="cart-head__product">
+                    PRODUCT
+                </div>
+                <div class="cart-head__price">
+                    PRICE
+                </div>
+                <div class="cart-head__qty">
+                    QTY
+                </div>
+                <div class="cart-head__unit">
+                    UNIT PRICE
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="view">
+                <div class="view__delete">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="view__image">
+                    <img src="images/c04297141.png" alt="" class="pic">
+                </div>
+                <div class="view__title">
+                    Philips Hue 7W BR30 Connected Downlight Lamp
+                </div>
+                <div class="view__unit-price">
+                    $998
+                </div>
+                <div class="view__count">
+                    <div class="counter__button">
+                        <div class="counter__button--minus">
+                            <i class="fas fa-minus counter__button--minu-icon"></i>
+                        </div>
+                        <div class="counter__button--count">
+                            2
+                        </div>
+                        <div class="counter__button--plus">
+                            <i class="fas fa-plus counter__button--plus-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="view__price">
+                    $499
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="view">
+                <div class="view__delete">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="view__image">
+                    <img src="images/50061505_575246.png" alt="" class="pic">
+                </div>
+                <div class="view__title">
+                    Apple Macbook Pro
+                </div>
+                <div class="view__unit-price">
+                    $998
+                </div>
+                <div class="view__count">
+                    <div class="counter__button">
+                        <div class="counter__button--minus">
+                            <i class="fas fa-minus counter__button--minu-icon"></i>
+                        </div>
+                        <div class="counter__button--count">
+                            2
+                        </div>
+                        <div class="counter__button--plus">
+                            <i class="fas fa-plus counter__button--plus-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="view__price">
+                    $499
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-checkout">
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Voucher Code" name="voucher">
+                    <button type="submit">Redeem</i></button>
+                </form>
+            </div>
+            <div class="checkout">
+                <div class="sub">
+                    <div class="sub__text">
+                        Subtotal
+                    </div>
+                    <div class="sub__price">
+                        $998
+                    </div>
+                </div>
+                <div class="shipping">
+                    <div class="shipping__text">
+                        Shipping fee
+                    </div>
+                    <div class="shipping__price">
+                        $20
+                    </div>
+                </div>
+                <div class="coupon">
+                    <div class="coupon__text">
+                        Coupon
+                    </div>
+                    <div class="coupon__price">
+                        No
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total__text">
+                        Total
+                    </div>
+                    <div class="total__price">
+                        $118
+                    </div>
+                </div>
+                <div class="checkout__button">
+                    <a href="#">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="footer upper">
+            <div class="footer_description">
+                <h3>RAKUTECH</h3>
+                <div class="footer_text">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eum et doloribus perferendis aspernatur alias odio tempore at,
+                        assumenda consequuntur sed aliquam totam,
+                        expedita corrupti so luta architecto. Eos quisquam vitae quidem? </p>
+                </div>
+            </div>
+
+            <div class="social_media">
+
+                <h2> Follow Us </h2>
+                <p>Since the 1500, when an unkown printer took a gallery of type and scrambled.</p>
+
+                <div class="smLogo">
+                    <div class="webLogo 1"><i class="fab fa-facebook-f"></i></div>
+                    <div class="webLogo 2"> <i class="fab fa-twitter"></i></div>
+                </div>
+
+            </div>
+
+            <div class="contact">
+
+                <h2>Contact Us</h2>
+                <p>My Company , 4578 Marmora Road, Glasgow <br> D04 89GR <br> Call us now: 0123-456-789 <br> Email:
+                    support@whatever.com</p>
+
+            </div>
+        </div>
+
+        <div class="footer lower">
+
+            <ul class="footer_list information">
+
+                <h4>Information</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list service">
+
+                <h4>Services</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list extras">
+
+                <h4>Extras</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list account">
+
+                <h4>My Account</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list links">
+
+                <h4>Useful Links</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list offers">
+
+                <h4>Our Offers</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+        </div>
+
+        <div class="payment">
+
+            <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
+
+            <ul class="payment__option">
+
+                <li><img src="/images/Western-union.png" alt=""></li>
+                <li><img src="/images/Group 19.png" alt=""></li>
+                <li><img src="/images/Paypal.png" alt=""></li>
+                <li><img src="/images/visa.jpg" alt=""></li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <div class="newsletter">
+
+        <div class="form_side">
+
+            <h2>Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Labore esse ab explicabo asperiores accusantium eligendi ipsam repellat quibusdam,
+                sint voluptatibus quos cumque laboriosam rerum minus sapiente?
+                Libero consequatur eum quod.</p>
+
+            <input type="text" placeholder="Email" name="search" class="page_search_box">
+            <button type="submit" class="search_button">Subscribe</i></button>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
