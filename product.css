@@ -70,16 +70,19 @@
 .product__details--review-button {
   font-size: 14px;
   font-family: 'Proxima Nova Rg';
-  color: #33A0FF;
 }
 
 .product__details--review-button a {
+  color: #33A0FF;
   text-decoration: none;
+}
+
+.product__details--review-button a:hover {
+  color: white;
 }
 
 .product__details--review-button:hover {
   background-color: #33A0FF;
-  color: #C1C8CE;
   padding: 2px;
   border-radius: 5px;
 }
@@ -118,21 +121,21 @@
 }
 
 .product__details--buttons-cart {
-  background-color: #99cfff;
-  padding: 5px;
+  background-color: #ddeafd;
+  padding: 10px;
   border-radius: 10px;
   color: #33A0FF;
 }
 
 .product__details--buttons-cart:hover {
   background-color: #33A0FF;
-  color: #99cfff;
+  color: #ddeafd;
   cursor: pointer;
 }
 
 .product__details--buttons-favorite {
-  background-color: #99cfff;
-  padding: 5px;
+  background-color: #ddeafd;
+  padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
   display: -webkit-box;
@@ -146,7 +149,7 @@
 
 .product__details--buttons-favorite:hover {
   background-color: #33A0FF;
-  color: #99cfff;
+  color: #ddeafd;
   cursor: pointer;
 }
 /*# sourceMappingURL=product.css.map */
