@@ -765,7 +765,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
+  background-color: #2E90E5;
+  width: 870px;
+  height: 340px;
+  padding: 0 100px 0 100px;
 }
 
 .product_banner_sub .product_banner_text_sub {
@@ -782,6 +785,26 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.product_banner_sub .product_banner_text_sub.small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.product_banner_sub .product_banner_text_sub.small h1 {
+  font-size: 42px;
+}
+
+.product_banner_sub .product_banner_text_sub.small p {
+  font-size: 16px;
+}
+
+.product_banner_sub .product_banner_text_sub.small a {
+  font-size: 14px;
 }
 
 .product_banner_sub .product_banner_text_sub h1 {
@@ -813,6 +836,10 @@ body {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
   z-index: -1;
+}
+
+.product_banner_sub .product_banner_image_sub.small {
+  background-image: url(images/iPhone6.png);
 }
 
 .news_container {
@@ -1147,10 +1174,12 @@ body {
 }
 
 .main_container {
-  margin: 0px 350px 0 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main_container .side_nav {
@@ -1161,15 +1190,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
-  width: 500px;
+  margin-right: 20px;
 }
 
-.main_container .side_nav .category {
-  list-style-type: none;
+.main_container .side_nav .filter.accessories, .main_container .side_nav .filter.price, .main_container .side_nav .filter.color, .main_container .side_nav .filter.brand, .main_container .side_nav .filter.more {
+  background-color: #F6F7F8;
+  margin-bottom: 20px;
 }
 
-.main_container .side_nav .filter {
+.main_container .side_nav .filter.accessories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,26 +1206,186 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20px;
 }
 
-.main_container .side_nav .filter.accessories, .main_container .side_nav .filter.price, .main_container .side_nav .filter.brand, .main_container .side_nav .filter.color, .main_container .side_nav .filter.more {
-  margin-bottom: 40px;
-  background-color: #F6F7F8;
+.main_container .side_nav .filter.accessories h2 {
+  font-size: 18px;
+}
+
+.main_container .side_nav .filter.accessories .list_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_container .side_nav .filter.accessories .list_box ul {
+  padding: 0px;
+  padding-right: 20px;
+}
+
+.main_container .side_nav .filter.accessories .list_box .category {
+  list-style-type: none;
+}
+
+.main_container .side_nav .filter.accessories .list_box .category li {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.main_container .side_nav .filter.accessories .list_box .list {
+  font-weight: bolder;
+}
+
+.main_container .side_nav .filter.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px 20px 20px;
+}
+
+.main_container .side_nav .filter.price .price_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .side_nav .filter.price .price_slider p {
+  font-size: 14px;
+}
+
+.main_container .side_nav .filter.price .price_slider p:nth-child(1) {
+  font-weight: bolder;
+}
+
+.main_container .side_nav .filter.price h2 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.main_container .side_nav .filter.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.main_container .side_nav .filter.color .category_color {
+  padding: 0px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .side_nav .filter.color h2 {
+  font-size: 18px;
+}
+
+.main_container .side_nav .filter.color .blue {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #006CFF;
+}
+
+.main_container .side_nav .filter.color .red {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FC3E39;
+}
+
+.main_container .side_nav .filter.color .black {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.main_container .side_nav .filter.color .yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFF600;
+}
+
+.main_container .side_nav .filter.color .yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFF600;
+}
+
+.main_container .side_nav .filter.color .pink {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF00B4;
+}
+
+.main_container .side_nav .filter.color .pink {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EFDFDF;
+}
+
+.main_container .side_nav .filter.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px 0 20px;
+}
+
+.main_container .side_nav .filter.brand .list_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .side_nav .filter.brand .list_box ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.main_container .side_nav .filter.more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 20px;
 }
 
-.main_container .side_nav .filter .list_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main_container .side_nav .filter.more button {
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 
 ul {
