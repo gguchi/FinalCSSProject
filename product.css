@@ -6,10 +6,56 @@
   font-display: swap;
 }
 
+.container__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F7F8;
+  font-family: 'Proxima Nova Rg';
+  color: #22262A;
+  margin-bottom: 30px;
+}
+
+.container__nav .items {
+  margin-left: 20px;
+}
+
+.container__nav .sort {
+  margin-left: 50px;
+}
+
+.container__nav .sort__dropdown {
+  margin-left: 20px;
+}
+
+.container__nav .show {
+  margin-left: 50px;
+}
+
+.container__nav .show__dropdown {
+  margin-left: 20px;
+}
+
+.container__nav .tab__detail {
+  margin-left: 370px;
+  color: #2678BF;
+  background-color: #F1F3F4;
+}
+
+.container__nav .tab__list {
+  margin-left: 20px;
+}
+
 .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 800px;
   border-bottom: 1px solid #F6F7F8;
 }
 
@@ -151,5 +197,82 @@
   background-color: #33A0FF;
   color: #ddeafd;
   cursor: pointer;
+}
+
+.container-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F6F7F8;
+  font-family: 'Proxima Nova Rg';
+  color: #22262A;
+  margin-top: 30px;
+}
+
+.container-page .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-page .page-1 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-1:hover {
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-2 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-2:hover {
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-3 {
+  height: 100%;
+  width: 60px;
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-4 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-4:hover {
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-5 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-5:hover {
+  background-color: #22262A;
+  color: white;
 }
 /*# sourceMappingURL=product.css.map */

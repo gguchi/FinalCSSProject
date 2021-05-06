@@ -17,9 +17,53 @@ $product-cart-bg: #99cfff;
 $product-border: #F6F7F8;
 $price: #FD2E2E;
 $price-discounted: #E5E5E5;
+$tab-detail: #2678BF;
+$tab-active: #F1F3F4;
+
+.container__nav {
+    display: flex;
+    width: 800px;
+    height: 60px;
+    align-items: center;
+    background-color: $product-border;
+    font-family: 'Proxima Nova Rg';
+    color: $product-text;
+    margin-bottom: 30px;
+
+    .items {
+        margin-left: 20px;
+    }
+    
+    .sort {
+        margin-left: 50px;
+
+        &__dropdown {
+            margin-left: 20px; 
+        }
+    }
+
+    .show {
+        margin-left: 50px;
+
+        &__dropdown {
+            margin-left: 20px; 
+        }
+    }
+
+    .tab__detail {
+        margin-left: 370px;
+        color: $tab-detail;
+        background-color: $tab-active;
+    }
+
+    .tab__list {
+        margin-left: 20px;
+    }
+}
 
 .product {
     display: flex;
+    width: 800px;
     border-bottom: 1px solid $product-border;
 
     &__image {
@@ -143,3 +187,68 @@ $price-discounted: #E5E5E5;
     }
 }
 
+
+.container-page {
+    display: flex;
+    width: 800px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: $product-border;
+    font-family: 'Proxima Nova Rg';
+    color: $product-text;
+    margin-top: 30px;
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-1 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+
+        &-2 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+
+        &-3 {
+            height: 100%;
+            width: 60px;
+            background-color: $product-text;
+            color: white;
+        }
+
+        &-4 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+
+        &-5 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+    }
+}
