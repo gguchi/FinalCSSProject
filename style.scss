@@ -864,6 +864,37 @@ body{
 
 // -----------------------------------product.html
 
+.sub_nav{
+
+    display: flex;
+    justify-content: center;
+    background-color: #F6F7F8;
+    margin-bottom: 40px;
+    
+    ul{
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        li{
+
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bolder;
+            color: #33A0FF;
+
+        }
+
+        li:nth-child(3){
+
+            color:#000000;
+        }
+
+    }
+
+}
+
 .main_container{
 
     display: flex;
