@@ -2,6 +2,7 @@
 @import "_details.scss";
 @import "_news.scss";
 @import "_featured.scss";
+@import "_product.scss";
 
 $body-margin: 0px 350px 0 350px;
 $div-padding: 0px 350px 0 350px;
@@ -463,6 +464,7 @@ body{
 
     &.small{
 
+        overflow: hidden;
         display: flex;
         background-color:#2E90E5;
         width: 870px;
@@ -541,8 +543,13 @@ body{
 
         &.small{
 
-            background-image: url(images/iPhone6.png);
-
+            top: -50px;
+            margin-left: 70px;
+            width: 465px;
+            height: 439px;
+            background-image: url("images/iPhone6.png");
+            background-size: cover;
+            background-repeat: no-repeat;
 
         }
 
@@ -580,6 +587,8 @@ body{
         margin-top: 50px;
 
     }
+
+    
 
 }
 
@@ -1080,6 +1089,13 @@ body{
             }
 
         }
+
+    }
+
+    .product_section{
+
+        display: flex;
+        flex-direction: column;
 
     }
 
