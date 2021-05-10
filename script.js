@@ -13,3 +13,9 @@ function assignGrade(score) {
     }
     
 }
+
+console.log(document.getElementById("store"));
+console.log(document.getElementById("iphone"));
+console.log(document.getElementById("ipad"));
+console.log(document.getElementById("macbook"));
+console.log(document.getElementById("accessories"));
