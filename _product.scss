@@ -68,6 +68,12 @@ $tab-active: #F1F3F4;
     width: 800px;
     border-bottom: 1px solid $product-border;
 
+    &:hover{
+
+        opacity: .6;
+
+    }
+
     &__image {
         height: 220px;
         width: 300px;
