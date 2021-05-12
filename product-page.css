@@ -13,8 +13,8 @@
 }
 
 .card {
-  height: 350px;
-  width: 270px;
+  height: 300px;
+  width: 230px;
   border: 1px solid #F6F7F8;
   border-radius: 10px;
   display: -webkit-box;
@@ -29,6 +29,11 @@
 .card__image {
   height: 153px;
   width: 236px;
+  margin: 30px 17px 0 17px;
+}
+
+.card__image--pic {
+  width: 200px;
   background-image: url("50061505_575246.png");
   background-size: cover;
   margin: 30px 17px 0 17px;
@@ -46,7 +51,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin-top: 10px;
   color: #262626;
   font-family: "Proxima Nova Rg";
   font-weight: 600;
@@ -1632,4 +1637,3 @@ li.dropdown {
 .dropdown:hover .dropdown_content {
   display: block;
 }
-/*# sourceMappingURL=product-page.css.map */
