@@ -29,6 +29,8 @@
 .card__image {
   height: 153px;
   width: 236px;
+  background-image: url("50061505_575246.png");
+        background-size: cover;
   margin: 30px 17px 0 17px;
 }
 
@@ -1403,6 +1405,31 @@ body {
   height: 480px;
 }
 
+.newsletter_container .newsletter .btn_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  color: #FFFFFF;
+  top: -20px;
+  left: 940px;
+}
+
+.newsletter_container .newsletter .btn_close:active .newsletter_container {
+  visibility: hidden;
+}
+
 .newsletter_container .newsletter .form_side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1793,4 +1820,3 @@ li.dropdown {
 .dropdown:hover .dropdown_content {
   display: block;
 }
-/*# sourceMappingURL=style.css.map */

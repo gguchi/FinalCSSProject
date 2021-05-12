@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$product-text: #22262A;
+$product-text-review: #C1C8CE;
+$product-text-review-button: #33A0FF;
+$product-star-yellow: #FFC600;
+$product-star-gray: #C1C8CE;
+$product-cart: #33A0FF;
+$product-cart-bg: #99cfff;
+$product-border: #F6F7F8;
+$price: #FD2E2E;
+$price-discounted: #E5E5E5;
+$tab-detail: #2678BF;
+$tab-active: #F1F3F4;
+
+.container__nav {
+
+    margin-top: 20px;
+    display: flex;
+    width: 800px;
+    height: 60px;
+    align-items: center;
+    background-color: $product-border;
+    font-family: 'Proxima Nova Rg';
+    color: $product-text;
+    margin-bottom: 30px;
+
+    .items {
+        margin-left: 20px;
+    }
+    
+    .sort {
+        margin-left: 50px;
+
+        &__dropdown {
+            margin-left: 20px; 
+        }
+    }
+
+    .show {
+        margin-left: 50px;
+
+        &__dropdown {
+            margin-left: 20px; 
+        }
+    }
+
+    .tab__detail {
+        margin-left: 370px;
+        color: $tab-detail;
+        background-color: $tab-active;
+    }
+
+    .tab__list {
+        margin-left: 20px;
+    }
+}
+
+.product {
+    display: flex;
+    width: 800px;
+    border-bottom: 1px solid $product-border;
+
+    &:hover{
+
+        opacity: .6;
+
+    }
+
+    &__image {
+        height: 220px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+
+        &--title {
+            font-size: 27px;
+            font-family: 'Proxima Nova Rg';
+            font-weight: bold;
+            color: $product-text;
+            margin-top: 10px;
+        }
+
+        &--review {
+            display: flex;
+            margin-top: 20px;
+
+            &-yellow {
+                color: $product-star-yellow;
+            }
+
+            &-gray {
+                color: $product-star-gray;
+            }
+
+            &-reviews {
+                font-size: 14px;
+                font-family: 'Proxima Nova Rg';
+                color: $product-text-review;
+                margin: 0 10px 0 10px;
+            }
+
+            &-button {
+                font-size: 14px;
+                font-family: 'Proxima Nova Rg';
+                
+                a {
+                    color: $product-text-review-button;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: white;
+                    }
+                }
+                
+
+                &:hover {
+                    background-color: $product-text-review-button;
+                    padding: 2px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        &--price {
+            display: flex;
+            font-size: 24px;
+            font-family: 'Proxima Nova Rg';
+            margin-top: 10px;
+
+            &-discounted {
+                color: $price;
+            }
+
+            &-original {
+                margin-left: 15px;
+                color: $price-discounted;
+                text-decoration: line-through;
+            }
+        }
+
+        &--text {
+            width: 500px;
+            margin-top: 10px;
+            font-size: 14px;
+            font-family: 'Proxima Nova Rg';
+        }
+
+        &--buttons {
+            display: flex;
+            margin-top: 10px;
+
+            &-cart {
+                background-color: rgb(221, 234, 253);
+                padding: 10px;
+                border-radius: 10px;
+                color: $product-text-review-button;
+
+                &:hover {
+                    background-color: $product-text-review-button;
+                    color: rgb(221, 234, 253);
+                    cursor: pointer;
+                }
+            }
+
+            &-favorite {
+                background-color: rgb(221, 234, 253);
+                padding: 10px;
+                border-radius: 10px;
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                color: $product-text-review-button;
+
+                &:hover {
+                    background-color: $product-text-review-button;
+                    color: rgb(221, 234, 253);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+.container-page {
+    display: flex;
+    width: 800px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: $product-border;
+    font-family: 'Proxima Nova Rg';
+    color: $product-text;
+    margin-top: 30px;
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-1 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+
+        &-2 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+
+        &-3 {
+            height: 100%;
+            width: 60px;
+            background-color: $product-text;
+            color: white;
+        }
+
+        &-4 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+
+        &-5 {
+            height: 100%;
+            width: 60px;
+
+            &:hover {
+                background-color: $product-text;
+                color: white;       
+            }
+        }
+    }
+}
