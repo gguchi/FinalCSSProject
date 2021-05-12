@@ -1403,6 +1403,31 @@ body {
   height: 480px;
 }
 
+.newsletter_container .newsletter .btn_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  color: #FFFFFF;
+  top: -20px;
+  left: 940px;
+}
+
+.newsletter_container .newsletter .btn_close:active .newsletter_container {
+  visibility: hidden;
+}
+
 .newsletter_container .newsletter .form_side {
   display: -webkit-box;
   display: -ms-flexbox;

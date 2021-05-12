@@ -797,6 +797,33 @@ body{
         display: flex;
         width: 960px;
         height: 480px;
+
+        .btn_close{
+
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            background-color: black;
+            color: #FFFFFF;
+            top: -20px;
+            left: 940px;
+
+            &:active{
+
+                .newsletter_container{
+
+                    visibility: hidden;
+
+                }
+
+            }
+
+        }
     
         .form_side{
     
