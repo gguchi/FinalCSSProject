@@ -3,6 +3,9 @@
 @import "_news.scss";
 @import "_featured.scss";
 
+$pink:#E14491;
+$orange:#D4A9A5;
+
 $body-margin: 0px 350px 0 350px;
 $div-padding: 0px 350px 0 350px;
 $marker: 1px solid black;
@@ -14,6 +17,12 @@ body{
 
     font-family: $family;
 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .header{
@@ -388,6 +397,7 @@ $tab: #F1F3F4;
 
         &--color {
             font-family: 'Proxima Nova Rg';
+            height: 15px;
             font-size: 14px;
             color: $product-details;
             font-weight: bold;
@@ -443,6 +453,32 @@ $tab: #F1F3F4;
                         box-shadow:0 0 0 2px rgb(248, 248, 143);
                     }
                 }
+
+                &__pink {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: $pink;
+                    margin-left: 10px;
+
+                    &:hover {
+                        border: 2px solid white;
+                        box-shadow:0 0 0 2px #e075a9;
+                    }
+                }
+
+                &__orange {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: $orange;
+                    margin-left: 10px;
+
+                    &:hover {
+                        border: 2px solid white;
+                        box-shadow:0 0 0 2px #d3d3d3;
+                    }
+                }
             }
         }
 
@@ -479,18 +515,26 @@ $tab: #F1F3F4;
         
                     &--minus {
                         color: $product-border-blue;
+                        height: 100%;       
                         font-size: 8px;
+                        border: none;
+                        background: none;
                     }
                     
                     &--count {
                         font-family: 'Proxima Nova Rg';
+                        width: 20px;
                         font-size: 16px;
                         color: $product-details;
+                        border: none;
                     }
                     
                     &--plus {
                         color: $product-border-blue;
+                        height: 100%;
                         font-size: 8px;
+                        border: none;
+                        background: none;
                     }
                 }
             }
