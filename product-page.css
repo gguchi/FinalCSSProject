@@ -34,6 +34,9 @@
 
 .card__image--pic {
   width: 200px;
+  background-image: url("50061505_575246.png");
+  background-size: cover;
+  margin: 30px 17px 0 17px;
 }
 
 .card__image:hover {
@@ -1634,4 +1637,3 @@ li.dropdown {
 .dropdown:hover .dropdown_content {
   display: block;
 }
-/*# sourceMappingURL=product-page.css.map */
