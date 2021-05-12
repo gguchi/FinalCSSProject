@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <title>PRODUCTS</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="language_switcher">
+
+            <select name="language_list" id="language">
+                <option value="english">ENG</option>
+            </select>
+
+            <select name="currency_list" id="currency">
+                <option value="english">USD</option>
+            </select>
+
+        </div>
+
+        <div class="session_details">
+
+            <div class="profile">    
+                <i class="far fa-user"></i>
+                My profile 
+            </div>
+            <div class="basket" onclick="window.location.href='/checkout-page.html'"">
+                <i class="far fa-shopping-basket"></i>
+                Items
+                <div class="cost">$0.00</div>
+            </div>
+
+            <div class="session_search">
+                <input type="text" name="search" class="session_search_box">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="navigation_banner">
+        <section class="logo">
+
+            <h1 class="first">RAKU</h1><h1 class="last">TECH</h1>
+
+        </section>
+
+        <nav class="navigation_bar">
+
+            <ul>
+                <li class="dropdown"> 
+                    <a href="index.html" class="dropbtn" onclick="window.location.href='/index.html'">HOME</a> 
+                        <div class="dropdown_content">
+
+                            <div class="dropdown_container">
+
+                                <div class="content_container">
+
+                                    <h2>Category</h2>
+                                    <a href="#">Airport & Wireless</a>
+                                    <a href="#">Apple Care</a>
+                                    <a href="#">Bags, Shells & Sleeves</a>
+                                    <a href="#">Business & Security</a>
+                                    <a href="#">Cables & Docks</a>
+                                    
+                                </div>
+
+                                <div class="content_container sub">
+
+                                    <a href="#">Camera & Videos</a>
+                                    <a href="#">Car & Travel</a>
+                                    <a href="#">Cases & Films</a>
+
+                                </div>
+                                
+                                <div class="content_container second">
+
+                                    <h2>Category</h2>
+                                    <a href="#">Chargin Devices</a>
+                                    <a href="#">Connected Home</a>
+                                    <a href="#">Device Care</a>
+                                    <a href="#">Display & Graphic</a>
+                                    <a href="#">Fitness & Sport</a>
+                                
+                                </div>
+
+                                <div class="content_container second_sub">
+
+                                    <a href="#">Headphones</a>
+                                    <a href="#">Healthkit</a>
+
+                                </div>
+
+                                <div class="content_container third">
+
+                                    <h2>Category</h2>
+                                    <a href="#">Mice & Keyboards</a>
+                                    <a href="#">Music Creation</a>
+                                    <a href="#">Networking & Server</a>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                </li>
+                <li> <a href="">STORE</a></li>
+                <li> <a href="">IPHONE</a> </li>
+                <li> <a href="">IPAD</a> </li>
+                <li> <a href="">MACBOOK</a></li>
+                <li> <a href="product.html">ACCESSORIES</a> </li>
+        
+            </ul>
+
+        </nav>
+    </section>
+
+    <div class="sub_nav">
+
+        <ul>
+            <li>Home /</li>
+            <li>Accessories /</li>
+            <li>Beat Solo2 on Ear Headphones - Black</li>
+        </ul>
+
+    </div>
+
+<!-- ----------------------------------------END OF HEADER -->
+
+<div class="main_container">
+
+    <section class="side_nav">
+
+        <div class="filter accessories">
+
+            <h2>ACCESSORIES</h2>
+
+            <div class="list_box">
+
+                <ul class="category list">
+
+                    <li>Apple Car</li>
+                    <li>Air port & wireless</li>
+                    <li>Cables & Docks</li>
+                    <li>Cases & Films</li>
+                    <li>Charging Devices</li>
+                    <li>Connected Home</li>
+                    <li>Headphones</li>
+
+                </ul>
+
+                <ul class="category count">
+
+                    <li>2</li>
+                    <li>48</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>23</li>
+                    <li>1</li>
+                    <li>95</li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="filter price">
+
+            <h2>PRICES</h2>
+
+            <div class="price_slider">
+
+                <p>Ranger:</p>
+                <p>$13.99 - $25.99</p>
+
+            </div>
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+
+        </div>
+
+        <div class="filter color">
+
+            <h2>COLOR</h2>
+
+            <ul class="category_color">
+
+                <li class="blue"></li>
+                <li class="red"></li>
+                <li class="black"></li>
+                <li class="yellow"></li>
+                <li class="pink"></li>
+                <li class="gray"></li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="filter brand">
+
+            <h2>BRAND</h2>
+
+            <div class="list_box">
+                <ul class="category brand">
+
+                    <li>Apple</li>
+                    <li>LG</li>
+                    <li>Samsung</li>
+                    <li>Siemens</li>
+
+                </ul>
+
+                <ul class="category count">
+
+                    <li>99</li>
+                    <li>99</li>
+                    <li>99</li>
+                    <li>99</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="filter more">
+
+            <button class="more_button">MORE</button>
+
+        </div>
+
+    </section>
+
+    <div class="product_section">
+
+        <section class="product_banner_sub small">
+
+            <div class="product_banner_text_sub small ">
+
+                <h1>iPhone 6 Plus</h1>
+                <p>Performance and Design. Taken right to the edge.</p>
+
+                <a href=""> SHOP NOW</a>
+
+            </div>
+
+            <div class="product_banner_image_sub small">
+
+                <!-- <img src="/images/iPhone6.png" alt=""> -->
+
+            </div>
+
+        </section>
+    
+
+        <div class="container__nav">
+            <div class="items">
+                13 items
+            </div>
+            <div class="sort">
+                Sort by
+            </div>
+            <div class="sort__dropdown">
+                Name
+            </div>
+            <div class="show">
+                Show 
+            </div>
+            <div class="show__dropdown">
+                12
+            </div>
+            <div class="tab__detail">
+                <i class="fas fa-th"></i>
+            </div>
+            <div class="tab__list">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="container-list">
+            <div class="product">
+                <a href="product-page.html">
+                <div class="product__image">
+                    <img src="images/50061505_575246.png" alt="">
+                </div>
+                <div class="product__details">
+                    <div class="product__details--title">
+                        Beats Solo2 On Ear Headphones - Black
+                    </div>
+                    <div class="product__details--review">
+                        <div class="product__details--review-stars">
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-gray"></i>
+                        </div>
+                        <div class="product__details--review-reviews">
+                            0 reviews
+                        </div>
+                        <div class="product__details--review-button">
+                            <a href="#">Submit a review</a>
+                        </div>
+                    </div>
+                    <div class="product__details--price">
+                        <div class="product__details--price-discounted">
+                            $499
+                        </div>
+                        <div class="product__details--price-original">
+                            $599
+                        </div>
+                    </div>
+                    <div class="product__details--text">
+                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut
+                        lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+                        nisl ut dolor ...
+                    </div>
+                    <div class="product__details--buttons">
+                        <div class="product__details--buttons-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </div>
+                        <div class="product__details--buttons-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="product" onclick="window.location.href='/product-page.html'">
+                <div class="product__image">
+                    <img src="images/50061505_575246.png" alt="">
+                </div>
+                <div class="product__details">
+                    <div class="product__details--title">
+                        Beats Solo2 On Ear Headphones - Black
+                    </div>
+                    <div class="product__details--review">
+                        <div class="product__details--review-stars">
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-gray"></i>
+                        </div>
+                        <div class="product__details--review-reviews">
+                            0 reviews
+                        </div>
+                        <div class="product__details--review-button">
+                            <a href="#">Submit a review</a>
+                        </div>
+                    </div>
+                    <div class="product__details--price">
+                        <div class="product__details--price-discounted">
+                            $499
+                        </div>
+                        <div class="product__details--price-original">
+                            $599
+                        </div>
+                    </div>
+                    <div class="product__details--text">
+                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut
+                        lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+                        nisl ut dolor ...
+                    </div>
+                    <div class="product__details--buttons">
+                        <div class="product__details--buttons-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </div>
+                        <div class="product__details--buttons-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='/product-page.html'">
+                <div class="product__image">
+                    <img src="images/50061505_575246.png" alt="">
+                </div>
+                <div class="product__details">
+                    <div class="product__details--title">
+                        Beats Solo2 On Ear Headphones - Black
+                    </div>
+                    <div class="product__details--review">
+                        <div class="product__details--review-stars">
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-gray"></i>
+                        </div>
+                        <div class="product__details--review-reviews">
+                            0 reviews
+                        </div>
+                        <div class="product__details--review-button">
+                            <a href="#">Submit a review</a>
+                        </div>
+                    </div>
+                    <div class="product__details--price">
+                        <div class="product__details--price-discounted">
+                            $499
+                        </div>
+                        <div class="product__details--price-original">
+                            $599
+                        </div>
+                    </div>
+                    <div class="product__details--text">
+                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut
+                        lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+                        nisl ut dolor ...
+                    </div>
+                    <div class="product__details--buttons">
+                        <div class="product__details--buttons-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </div>
+                        <div class="product__details--buttons-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='/product-page.html'">
+                <div class="product__image">
+                    <img src="images/50061505_575246.png" alt="">
+                </div>
+                <div class="product__details">
+                    <div class="product__details--title">
+                        Beats Solo2 On Ear Headphones - Black
+                    </div>
+                    <div class="product__details--review">
+                        <div class="product__details--review-stars">
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-gray"></i>
+                        </div>
+                        <div class="product__details--review-reviews">
+                            0 reviews
+                        </div>
+                        <div class="product__details--review-button">
+                            <a href="#">Submit a review</a>
+                        </div>
+                    </div>
+                    <div class="product__details--price">
+                        <div class="product__details--price-discounted">
+                            $499
+                        </div>
+                        <div class="product__details--price-original">
+                            $599
+                        </div>
+                    </div>
+                    <div class="product__details--text">
+                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut
+                        lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+                        nisl ut dolor ...
+                    </div>
+                    <div class="product__details--buttons">
+                        <div class="product__details--buttons-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </div>
+                        <div class="product__details--buttons-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='/product-page.html'">
+                <div class="product__image">
+                    <img src="images/50061505_575246.png" alt="">
+                </div>
+                <div class="product__details">
+                    <div class="product__details--title">
+                        Beats Solo2 On Ear Headphones - Black
+                    </div>
+                    <div class="product__details--review">
+                        <div class="product__details--review-stars">
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-gray"></i>
+                        </div>
+                        <div class="product__details--review-reviews">
+                            0 reviews
+                        </div>
+                        <div class="product__details--review-button">
+                            <a href="#">Submit a review</a>
+                        </div>
+                    </div>
+                    <div class="product__details--price">
+                        <div class="product__details--price-discounted">
+                            $499
+                        </div>
+                        <div class="product__details--price-original">
+                            $599
+                        </div>
+                    </div>
+                    <div class="product__details--text">
+                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut
+                        lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+                        nisl ut dolor ...
+                    </div>
+                    <div class="product__details--buttons">
+                        <div class="product__details--buttons-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </div>
+                        <div class="product__details--buttons-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='/product-page.html'">
+                <div class="product__image">
+                    <img src="images/50061505_575246.png" alt="">
+                </div>
+                <div class="product__details">
+                    <div class="product__details--title">
+                        Beats Solo2 On Ear Headphones - Black
+                    </div>
+                    <div class="product__details--review">
+                        <div class="product__details--review-stars">
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-yellow"></i>
+                            <i class="fas fa-star product__details--review-gray"></i>
+                        </div>
+                        <div class="product__details--review-reviews">
+                            0 reviews
+                        </div>
+                        <div class="product__details--review-button">
+                            <a href="#">Submit a review</a>
+                        </div>
+                    </div>
+                    <div class="product__details--price">
+                        <div class="product__details--price-discounted">
+                            $499
+                        </div>
+                        <div class="product__details--price-original">
+                            $599
+                        </div>
+                    </div>
+                    <div class="product__details--text">
+                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut
+                        lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+                        nisl ut dolor ...
+                    </div>
+                    <div class="product__details--buttons">
+                        <div class="product__details--buttons-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add To Cart
+                        </div>
+                        <div class="product__details--buttons-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-page">
+            <div class="page page-1">
+                1
+            </div>
+            <div class="page page-2">
+                2
+            </div>
+            <div class="page page-3">
+                3
+            </div>
+            <div class="page page-4">
+                4
+            </div>
+            <div class="page page-5">
+                5
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------------------------START OF FOOTER -->
+    <section class="footer">
+        <div class="footer upper">
+        <div class="footer_description"> <h3>RAKUTECH</h3> 
+            <div class="footer_text"> 
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eum et doloribus perferendis aspernatur alias odio tempore at, 
+                    assumenda consequuntur sed aliquam totam, 
+                    expedita corrupti so    luta architecto. Eos quisquam vitae quidem? </p>
+                </div>
+            </div>
+
+            <div class="social_media">
+                
+                <h2> Follow Us </h2>
+                <p>Since the 1500, when an unkown printer took a gallery of type and scrambled.</p>
+                
+                <div class="smLogo">
+                    <div class="webLogo 1"><i class="fab fa-facebook-f"></i></div>
+                    <div class="webLogo 2"> <i class="fab fa-twitter"></i></div>
+                </div>
+
+            </div>
+
+            <div class="contact">
+                
+                <h2>Contact Us</h2>
+                <p>My Company , 4578 Marmora Road, Glasgow <br> D04 89GR <br> Call us now: 0123-456-789 <br> Email: support@whatever.com</p>
+            
+            </div>
+        </div>
+
+        <div class="footer lower">
+
+            <ul class="footer_list information">
+                
+                <h4>Information</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list service">
+                
+                <h4>Services</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list extras">
+                
+                <h4>Extras</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list account">
+                
+                <h4>My Account</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list links">
+                
+                <h4>Useful Links</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+            <ul class="footer_list offers">
+                
+                <h4>Our Offers</h4>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+
+            </ul>
+
+        </div>
+
+        <div class="payment">
+
+            <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
+
+            <ul class="payment__option">
+
+                <li><img src="/images/Western-union.png" alt=""></li>
+                <li><img src="/images/Group 19.png" alt=""></li>
+                <li><img src="/images/Paypal.png" alt=""></li>
+                <li><img src="/images/visa.jpg" alt=""></li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
