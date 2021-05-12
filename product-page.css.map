@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "sources": [
+        "product-page.scss",
+        "_card.scss",
+        "_details.scss",
+        "_news.scss",
+        "_featured.scss"
+    ],
+    "names": [],
+    "file": "product-page.css"
+}

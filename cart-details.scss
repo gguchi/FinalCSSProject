@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$text: #262626;
+$delete: #FF4252;
+$count: #33A0FF;
+$count-bg: #F6F7F8;
+
+.container {
+    
+    .view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 900px;
+        border-bottom: 2px solid $count-bg;
+
+        &__delete {
+            font-size: 18px;
+            color: $delete;
+            margin-right: 40px;
+        }
+        
+        &__image {
+            height: 80px;
+            width: 100px;
+            margin-right: 40px;
+            background-color: blue;
+        }
+
+        &__title {
+            font-family: 'Proxima Nova Rg';
+            font-weight: bold;
+            font-size: 18px;
+            color: $text;
+            margin-right: 40px;
+        }
+
+        &__unit-price {
+            font-family: 'Proxima Nova Rg';
+            font-size: 18px;
+            color: $text;
+            margin-right: 40px;
+        }
+
+        .counter {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+    
+            &__button {
+                height: 40px;
+                width: 80px;
+                background-color: $count-bg;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 40px;
+    
+                &--minus {
+                    color: $count;
+                    font-size: 8px;
+                }
+                
+                &--count {
+                    font-family: 'Proxima Nova Rg';
+                    font-size: 16px;
+                    color: $text;
+                }
+                
+                &--plus {
+                    color: $count;
+                    font-size: 8px;
+                }
+            }
+        }
+
+        &__price {
+            font-family: 'Proxima Nova Rg';
+            font-size: 18px;
+            color: $text;
+            margin-right: 40px;
+        }
+    }
+}
