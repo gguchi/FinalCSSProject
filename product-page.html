@@ -155,7 +155,7 @@
             <div class="container-product__wrapper">
                 <div class="product">
                     <div class="product__image">
-                        <img src="images/c04297141.png" alt="" class="pic">
+                        <img src="images/c04297141.png" alt="" class="pic" id="prod-image">
                         <div class="image-set">
                             <img src="images/_0053_rgb_MP582-RGB-bttm_V2.png" alt="" class="image-set__item">
                             <img src="images/_0066_rgb_MNEN2-RGB-side_V2.png" alt="" class="image-set__item">
@@ -214,10 +214,12 @@
                         <div class="product__details--color">
                             Select Color:
                             <div class="circle"></div>
-                            <div class="circle__blue"></div>
-                            <div class="circle__red"></div>
-                            <div class="circle__black"></div>
-                            <div class="circle__yellow"></div>
+                            <!-- <div class="circle__blue"></div> -->
+                            <div class="circle__black" onclick="document.getElementById('prod-image').src='images/beats__black.png'"></div>
+                            <div class="circle__red" onclick="document.getElementById('prod-image').src='images/beat-red.png'"></div>
+                            <!-- <div class="circle__yellow"></div> -->
+                            <div class="circle__pink" onclick="document.getElementById('prod-image').src='images/beats__pink.png'"></div>
+                            <div class="circle__orange" onclick="document.getElementById('prod-image').src='images/beats__gold.png'"></div>
                         </div>
                         <div class="product__details--size">
                             Size:
@@ -225,15 +227,13 @@
                         <div class="options">
                             <div class="counter">
                                 <div class="counter__button">
-                                    <div class="counter__button--minus">
+                                    <button class="counter__button--minus">
                                         <i class="fas fa-minus counter__button--minu-icon"></i>
-                                    </div>
-                                    <div class="counter__button--count">
-                                        2
-                                    </div>
-                                    <div class="counter__button--plus">
-                                        <i class="fas fa-plus counter__button--plus-plus"></i>
-                                    </div>
+                                    </button>
+                                    <input class="counter__button--count" type="number" value="0">
+                                    <button class="counter__button--plus">
+                                        <i class="fas fa-plus counter__button--plus-icon"></i>
+                                    </button>
                                 </div>
                             </div>
                             <div class="buttons">
@@ -550,6 +550,8 @@
 
     </section>
 
+
+    <script src="product-page.js"></script>
 </body>
 
 </html>
