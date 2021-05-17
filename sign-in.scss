@@ -1,0 +1,44 @@
+@import "_sign.scss";
+
+
+
+.form_side{ 
+
+    .form_container{ 
+        .header_container{    
+            h1{
+        
+                font-size: 35px;
+            
+            }   
+        }
+
+        .sign__in{
+
+            &--apple{
+
+                background-color: black;
+                color: white;
+                
+            width: 327px;
+            height: 48px;
+            border-radius: 6px;
+            border: 0;
+            }
+
+            &--facebook{
+
+                background-color: blue;
+                color: white;
+                
+            width: 327px;
+            height: 48px;
+            border-radius: 6px;
+            border: 0;
+            }
+
+        }
+
+    }
+
+}
