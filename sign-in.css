@@ -1,3 +1,7 @@
+.main_container .form__side .form__container .user__name, .main_container .form__side .form__container .user__email, .main_container .form__side .form__container .user__password {
+  padding-left: 15px;
+}
+
 body {
   margin: 0% auto;
   padding: 0%;
@@ -65,7 +69,7 @@ body {
   color: white;
 }
 
-.main_container .form_side {
+.main_container .form__side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +80,7 @@ body {
           justify-content: flex-end;
 }
 
-.main_container .form_side .form_container {
+.main_container .form__side .form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,15 +90,11 @@ body {
           flex-direction: column;
   background-color: #FFFFFF;
   border-radius: 8px;
-  padding: 70px 10px 30px 50px;
+  padding: 70px 30px 30px 30px;
   width: 370px;
 }
 
-.main_container .form_side .form_container h1 {
-  font-size: 24px;
-}
-
-.main_container .form_side .form_container .header_container {
+.main_container .form__side .form__container--inside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,57 +107,85 @@ body {
           align-items: center;
 }
 
-.main_container .form_side .form_container .header_container .log_in {
+.main_container .form__side .form__container h1 {
+  font-size: 24px;
+}
+
+.main_container .form__side .form__container .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .form__side .form__container .header__container .log_in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.main_container .form_side .form_container .header_container .log_in a {
+.main_container .form__side .form__container .header__container .log_in a {
+  padding-left: 5px;
   text-decoration: none;
   font-weight: bolder;
 }
 
-.main_container .form_side .form_container .input__name, .main_container .form_side .form_container .input__email, .main_container .form_side .form_container .input__password {
+.main_container .form__side .form__container .input__name, .main_container .form__side .form__container .input__email, .main_container .form__side .form__container .input__password {
   padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.main_container .form_side .form_container .input__name label, .main_container .form_side .form_container .input__email label, .main_container .form_side .form_container .input__password label {
+.main_container .form__side .form__container .input__name label, .main_container .form__side .form__container .input__email label, .main_container .form__side .form__container .input__password label {
   font-weight: bolder;
 }
 
-.main_container .form_side .form_container .user__name, .main_container .form_side .form_container .user__email, .main_container .form_side .form_container .user__password {
+.main_container .form__side .form__container .user__name, .main_container .form__side .form__container .user__email, .main_container .form__side .form__container .user__password {
   width: 327px;
   height: 48px;
   border-radius: 8px;
   border: #C4C4C4 1px solid;
 }
 
-.main_container .form_side .form_container .mailer {
+.main_container .form__side .form__container .mailer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-self: flex-start;
+  position: relative;
+  padding-bottom: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-bottom: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  left: 10px;
 }
 
-.main_container .form_side .form_container .mailer .user__mailer {
+.main_container .form__side .form__container .mailer .user__mailer {
   height: 24px;
   width: 24px;
   border-radius: 2px;
 }
 
-.main_container .form_side .form_container .sign__up {
-  width: 327px;
+.main_container .form__side .form__container .sign__up {
+  width: 350px;
   height: 48px;
   background-color: #FD2E2E;
   border-radius: 8px;
@@ -165,7 +193,7 @@ body {
   border: 0;
 }
 
-.main_container .form_side .form_container .terms_agreement {
+.main_container .form__side .form__container .terms_agreement {
   width: 196px;
   height: 28px;
   font-size: 10px;
@@ -174,25 +202,69 @@ body {
       align-self: center;
 }
 
-.form_side .form_container .header_container h1 {
+.form__side .form__container--inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__side .form__container .header__container h1 {
   font-size: 35px;
 }
 
-.form_side .form_container .sign__in--apple {
-  background-color: black;
-  color: white;
+.form__side .form__container .sign__in--apple, .form__side .form__container .sign__in--facebook {
   width: 327px;
   height: 48px;
   border-radius: 6px;
   border: 0;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 20% 40%;
 }
 
-.form_side .form_container .sign__in--facebook {
+.form__side .form__container .sign__in--apple {
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  background-image: url(images/apple-64.png);
+}
+
+.form__side .form__container .sign__in--facebook {
   background-color: blue;
   color: white;
-  width: 327px;
-  height: 48px;
-  border-radius: 6px;
-  border: 0;
+  background-image: url(images/fb-64.png);
+}
+
+.form__side .form__container .divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+}
+
+.form__side .form__container .divider hr {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  height: 1px;
+  background-color: #adabab;
+  border: 1px solid transparent;
+}
+
+p a {
+  text-decoration: none;
+  color: #B2002D;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=sign-in.css.map */

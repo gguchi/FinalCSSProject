@@ -1,11 +1,19 @@
-@import "_sign.scss";
+@import "sign.scss";
 
 
 
-.form_side{ 
+.form__side{ 
+    .form__container{ 
+        
+        &--inside{
 
-    .form_container{ 
-        .header_container{    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .header__container{    
             h1{
         
                 font-size: 35px;
@@ -15,29 +23,63 @@
 
         .sign__in{
 
+            &--apple, &--facebook{
+                width: 327px;
+                height: 48px;
+                border-radius: 6px;
+                border: 0;
+                background-repeat: no-repeat;
+                background-size: 22px;
+                background-position: 20% 40%;
+            }
+
             &--apple{
 
                 background-color: black;
                 color: white;
+                margin-bottom: 15px;
+                background-image: url(images/apple-64.png);
                 
-            width: 327px;
-            height: 48px;
-            border-radius: 6px;
-            border: 0;
             }
 
             &--facebook{
 
                 background-color: blue;
-                color: white;
-                
-            width: 327px;
-            height: 48px;
-            border-radius: 6px;
-            border: 0;
+                color: white;   
+                background-image: url(images/fb-64.png);
+
             }
 
         }
+
+        .divider{
+
+            display: flex;
+            align-items: center;
+            flex-basis: 100%;
+            width: 100%;
+
+            hr{
+
+                flex-basis: 33%;
+                height: 1px;
+                background-color: rgb(173, 171, 171);
+                border: 1px solid transparent;
+
+            }
+
+        }
+
+    }
+
+}
+p{
+
+    a{
+
+        text-decoration: none;
+        color: #B2002D;
+        font-weight: bolder;
 
     }
 
