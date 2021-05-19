@@ -291,6 +291,12 @@ body {
   font-family: "Proxima Nova Rg";
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,6 +664,7 @@ body {
 
 .product__details--color {
   font-family: 'Proxima Nova Rg';
+  height: 15px;
   font-size: 14px;
   color: #262626;
   font-weight: bold;
@@ -758,6 +765,34 @@ body {
   width: 10px;
 }
 
+.product__details--color .circle__pink {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #E14491;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__pink:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #e075a9;
+          box-shadow: 0 0 0 2px #e075a9;
+}
+
+.product__details--color .circle__orange {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #D4A9A5;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__orange:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #d3d3d3;
+          box-shadow: 0 0 0 2px #d3d3d3;
+}
+
 .product__details--size {
   font-family: 'Proxima Nova Rg';
   font-size: 14px;
@@ -807,7 +842,10 @@ body {
 
 .product__details .options .counter__button--minus {
   color: #006CFF;
+  height: 100%;
   font-size: 8px;
+  border: none;
+  background: none;
 }
 
 .product__details .options .counter__button--count {
@@ -815,8 +853,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Proxima Nova Rg';
+  width: 20px;
   font-size: 16px;
   color: #262626;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -838,7 +878,10 @@ body {
 
 .product__details .options .counter__button--plus {
   color: #006CFF;
+  height: 100%;
   font-size: 8px;
+  border: none;
+  background: none;
 }
 
 .product__details .buttons {
