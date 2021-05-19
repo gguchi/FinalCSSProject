@@ -295,6 +295,12 @@
   font-display: swap;
 }
 
+.counter__button--count {
+  background-color: transparent;
+  width: 50px;
+  border: 1px solid transparent;
+}
+
 .container__nav {
   margin-top: 20px;
   display: -webkit-box;
@@ -632,6 +638,13 @@ body {
 .header .session_details .basket i {
   margin-right: 5px;
   font-size: 14px;
+}
+
+.header .session_details .basket a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .header .session_details .basket .cost {
@@ -1818,3 +1831,4 @@ li.dropdown {
 .dropdown:hover .dropdown_content {
   display: block;
 }
+/*# sourceMappingURL=style.css.map */
