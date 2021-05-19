@@ -21,13 +21,13 @@ btnSubtract.addEventListener("click", () =>{
 
 let btnPink = document.querySelector(".circle__pink");
 let btnRed = document.getElementsByClassName(".circle__red");
-let btnBlack = document.document.getElementsByClassName(".circle__black");
+let btnBlack = document.getElementsByClassName(".circle__black");
 let btnWhite = document.getElementsByClassName(".circle__white");
 let btnBrown = document.getElementsByClassName(".circle__brown");
 
 btnPink.addEventListener("click", () => {
 
-    document.getElementsByClassName(".pic").src='images/beats_4.png';
+    document.getElementsByClassName(".pic").src="images/beats_4.png";
     alert("alert");
 
 });
