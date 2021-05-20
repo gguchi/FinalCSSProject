@@ -424,24 +424,7 @@ $tab: #F1F3F4;
 
                     &:hover {
                         border: 2px solid white;
-                        box-shadow:0 0 0 2px rgb(252, 0, 0);
-                        height: 10px;
-                        width: 10px;
-                    }
-                }
-
-                &__pink {
-                    height: 15px;
-                    width: 15px;
-                    border-radius: 50%;
-                    background-color:pink;
-                    margin-left: 10px;
-
-                    &:hover {
-                        border: 2px solid white;
-                        box-shadow:0 0 0 2px rgb(255, 149, 149);
-                        height: 10px;
-                        width: 10px;
+                        box-shadow:0 0 0 2px rgb(241, 109, 109);
                     }
                 }
 
@@ -455,37 +438,19 @@ $tab: #F1F3F4;
                     &:hover {
                         border: 2px solid white;
                         box-shadow:0 0 0 2px black;
-                        width: 10px;
-                        height: 10px;
                     }
                 }
 
-                &__white {
+                &__yellow {
                     height: 15px;
                     width: 15px;
                     border-radius: 50%;
-                    background-color: white;
+                    background-color: yellow;
                     margin-left: 10px;
 
                     &:hover {
                         border: 2px solid white;
                         box-shadow:0 0 0 2px rgb(248, 248, 143);
-                        height: 10px;
-                        width: 10px;
-                    }
-                }
-                &__brown {
-                    height: 15px;
-                    width: 15px;
-                    border-radius: 50%;
-                    background-color: brown;
-                    margin-left: 10px;
-
-                    &:hover {
-                        border: 2px solid white;
-                        box-shadow:0 0 0 2px rgb(248, 198, 151);
-                        height: 10px;
-                        width: 10px;
                     }
                 }
 
@@ -557,24 +522,11 @@ $tab: #F1F3F4;
                     }
                     
                     &--count {
-                        display: flex;
                         font-family: 'Proxima Nova Rg';
                         width: 20px;
                         font-size: 16px;
                         color: $product-details;
-                        justify-content: center;
-                        align-items: center;
-
-                        input{
-
-                            display: flex;
-                            border: 1px solid transparent;
-                            width: 20px;
-                            background-color: $product-button-bg;
-                            align-content: center;
-
-                        }
-
+                        border: none;
                     }
                     
                     &--plus {
@@ -824,7 +776,8 @@ $tab: #F1F3F4;
         padding-right: 50px;
     }
 
-    // &__unit { }
+    &__unit {
+    }
 }
 
 .product_banner{
@@ -1354,4 +1307,3 @@ li.dropdown {
 
     display: block;
 
-}
