@@ -35,7 +35,7 @@
 
             <div class="profile">
                 <i class="far fa-user"></i>
-                My profile
+                <a href="sign-in.html"> My profile </a>
             </div>
             <div class="basket">
                 <i class="far fa-shopping-basket"></i>
@@ -64,7 +64,7 @@
 
             <ul>
                 <li class="dropdown">
-                    <a href="javascript:void(1)" class="dropbtn" onclick="window.location.href='/index.html'">HOME</a>
+                    <a href="index.html" class="dropbtn">HOME</a>
                     <div class="dropdown_content">
 
                         <div class="dropdown_container">
@@ -124,7 +124,6 @@
                 <li> <a href="">IPAD</a> </li>
                 <li> <a href="">MACBOOK</a></li>
                 <li> <a href="product.html">ACCESSORIES</a> </li>
-
             </ul>
 
         </nav>
@@ -155,7 +154,7 @@
             <div class="container-product__wrapper">
                 <div class="product">
                     <div class="product__image">
-                        <img src="images/c04297141.png" alt="" class="pic">
+                        <img src="images/c04297141.png" alt="" class="pic" id="prod-image">
                         <div class="image-set">
                             <img src="images/_0053_rgb_MP582-RGB-bttm_V2.png" alt="" class="image-set__item">
                             <img src="images/_0066_rgb_MNEN2-RGB-side_V2.png" alt="" class="image-set__item">
@@ -214,10 +213,12 @@
                         <div class="product__details--color">
                             Select Color:
                             <div class="circle"></div>
-                            <div class="circle__blue"></div>
+                            <div class="circle__pink"></div>
                             <div class="circle__red"></div>
                             <div class="circle__black"></div>
-                            <div class="circle__yellow"></div>
+                            <div class="circle__white"></div>
+                            <div class="circle__brown"></div>
+
                         </div>
                         <div class="product__details--size">
                             Size:
@@ -225,11 +226,12 @@
                         <div class="options">
                             <div class="counter">
                                 <div class="counter__button">
-                                    <div class="counter__button--minus">
+                                    <button class="counter__button--minus">
                                         <i class="fas fa-minus counter__button--minu-icon"></i>
                                     </div>
                                     <div class="counter__button--count">
-                                        2
+                                        <input type="text" class="counter__button--counter" value="0">
+                                        <!-- <div class="counter__button--counter">0</div> -->
                                     </div>
                                     <div class="counter__button--plus">
                                         <i class="fas fa-plus counter__button--plus-plus"></i>
@@ -549,6 +551,10 @@
         </div>
 
     </section>
+
+<!--     <script src="javascript.js"></script> -->
+
+<script src="newjs.js"></script>
 
 </body>
 

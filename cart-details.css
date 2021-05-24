@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("fonts/ProximaNova-Regular.woff2") format("woff2"), url("fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 900px;
+  border-bottom: 2px solid #F6F7F8;
+}
+
+.container .view__delete {
+  font-size: 18px;
+  color: #FF4252;
+  margin-right: 40px;
+}
+
+.container .view__image {
+  height: 80px;
+  width: 100px;
+  margin-right: 40px;
+  background-color: blue;
+}
+
+.container .view__title {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-size: 18px;
+  color: #262626;
+  margin-right: 40px;
+}
+
+.container .view__unit-price {
+  font-family: 'Proxima Nova Rg';
+  font-size: 18px;
+  color: #262626;
+  margin-right: 40px;
+}
+
+.container .view .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.container .view .counter__button {
+  height: 40px;
+  width: 80px;
+  background-color: #F6F7F8;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.container .view .counter__button--minus {
+  color: #33A0FF;
+  font-size: 8px;
+}
+
+.container .view .counter__button--count {
+  font-family: 'Proxima Nova Rg';
+  font-size: 16px;
+  color: #262626;
+}
+
+.container .view .counter__button--plus {
+  color: #33A0FF;
+  font-size: 8px;
+}
+
+.container .view__price {
+  font-family: 'Proxima Nova Rg';
+  font-size: 18px;
+  color: #262626;
+  margin-right: 40px;
+}
+/*# sourceMappingURL=cart-details.css.map */

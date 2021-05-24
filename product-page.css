@@ -13,8 +13,8 @@
 }
 
 .card {
-  height: 350px;
-  width: 270px;
+  height: 300px;
+  width: 230px;
   border: 1px solid #F6F7F8;
   border-radius: 10px;
   display: -webkit-box;
@@ -29,9 +29,11 @@
 .card__image {
   height: 153px;
   width: 236px;
-  background-image: url("50061505_575246.png");
-  background-size: cover;
   margin: 30px 17px 0 17px;
+}
+
+.card__image--pic {
+  width: 200px;
 }
 
 .card__image:hover {
@@ -46,7 +48,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin-top: 10px;
   color: #262626;
   font-family: "Proxima Nova Rg";
   font-weight: 600;
@@ -287,6 +289,12 @@
 
 body {
   font-family: "Proxima Nova Rg";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .header {
@@ -656,6 +664,7 @@ body {
 
 .product__details--color {
   font-family: 'Proxima Nova Rg';
+  height: 15px;
   font-size: 14px;
   color: #262626;
   font-weight: bold;
@@ -686,8 +695,26 @@ body {
 
 .product__details--color .circle__red:hover {
   border: 2px solid white;
-  -webkit-box-shadow: 0 0 0 2px #f16d6d;
-          box-shadow: 0 0 0 2px #f16d6d;
+  -webkit-box-shadow: 0 0 0 2px #fc0000;
+          box-shadow: 0 0 0 2px #fc0000;
+  height: 10px;
+  width: 10px;
+}
+
+.product__details--color .circle__pink {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: pink;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__pink:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #ff9595;
+          box-shadow: 0 0 0 2px #ff9595;
+  height: 10px;
+  width: 10px;
 }
 
 .product__details--color .circle__black {
@@ -702,20 +729,68 @@ body {
   border: 2px solid white;
   -webkit-box-shadow: 0 0 0 2px black;
           box-shadow: 0 0 0 2px black;
+  width: 10px;
+  height: 10px;
 }
 
-.product__details--color .circle__yellow {
+.product__details--color .circle__white {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: white;
   margin-left: 10px;
 }
 
-.product__details--color .circle__yellow:hover {
+.product__details--color .circle__white:hover {
   border: 2px solid white;
   -webkit-box-shadow: 0 0 0 2px #f8f88f;
           box-shadow: 0 0 0 2px #f8f88f;
+  height: 10px;
+  width: 10px;
+}
+
+.product__details--color .circle__brown {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: brown;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__brown:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #f8c697;
+          box-shadow: 0 0 0 2px #f8c697;
+  height: 10px;
+  width: 10px;
+}
+
+.product__details--color .circle__pink {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #E14491;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__pink:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #e075a9;
+          box-shadow: 0 0 0 2px #e075a9;
+}
+
+.product__details--color .circle__orange {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #D4A9A5;
+  margin-left: 10px;
+}
+
+.product__details--color .circle__orange:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 0 2px #d3d3d3;
+          box-shadow: 0 0 0 2px #d3d3d3;
 }
 
 .product__details--size {
@@ -767,18 +842,46 @@ body {
 
 .product__details .options .counter__button--minus {
   color: #006CFF;
+  height: 100%;
   font-size: 8px;
+  border: none;
+  background: none;
 }
 
 .product__details .options .counter__button--count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Proxima Nova Rg';
+  width: 20px;
   font-size: 16px;
   color: #262626;
+
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__details .options .counter__button--count input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid transparent;
+  width: 20px;
+  background-color: #F6F7F8;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .product__details .options .counter__button--plus {
   color: #006CFF;
+  height: 100%;
   font-size: 8px;
+  border: none;
+  background: none;
 }
 
 .product__details .buttons {

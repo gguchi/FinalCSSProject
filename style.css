@@ -29,6 +29,8 @@
 .card__image {
   height: 153px;
   width: 236px;
+  background-image: url("50061505_575246.png");
+        background-size: cover;
   margin: 30px 17px 0 17px;
 }
 
@@ -293,6 +295,12 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+.counter__button--count {
+  background-color: transparent;
+  width: 50px;
+  border: 1px solid transparent;
 }
 
 .container__nav {
@@ -622,6 +630,11 @@ body {
   font-weight: bolder;
 }
 
+.header .session_details .profile a {
+  text-decoration: none;
+  color: black;
+}
+
 .header .session_details .basket {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,6 +645,13 @@ body {
 .header .session_details .basket i {
   margin-right: 5px;
   font-size: 14px;
+}
+
+.header .session_details .basket a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .header .session_details .basket .cost {
@@ -1401,6 +1421,31 @@ body {
   display: flex;
   width: 960px;
   height: 480px;
+}
+
+.newsletter_container .newsletter .btn_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  color: #FFFFFF;
+  top: -20px;
+  left: 940px;
+}
+
+.newsletter_container .newsletter .btn_close:active .newsletter_container {
+  visibility: hidden;
 }
 
 .newsletter_container .newsletter .form_side {

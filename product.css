@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("fonts/ProximaNova-Regular.woff2") format("woff2"), url("fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F7F8;
+  font-family: 'Proxima Nova Rg';
+  color: #22262A;
+  margin-bottom: 30px;
+}
+
+.container__nav .items {
+  margin-left: 20px;
+}
+
+.container__nav .sort {
+  margin-left: 50px;
+}
+
+.container__nav .sort__dropdown {
+  margin-left: 20px;
+}
+
+.container__nav .show {
+  margin-left: 50px;
+}
+
+.container__nav .show__dropdown {
+  margin-left: 20px;
+}
+
+.container__nav .tab__detail {
+  margin-left: 370px;
+  color: #2678BF;
+  background-color: #F1F3F4;
+}
+
+.container__nav .tab__list {
+  margin-left: 20px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  border-bottom: 1px solid #F6F7F8;
+}
+
+.product__image {
+  height: 220px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__details--title {
+  font-size: 27px;
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  color: #22262A;
+  margin-top: 10px;
+}
+
+.product__details--review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.product__details--review-yellow {
+  color: #FFC600;
+}
+
+.product__details--review-gray {
+  color: #C1C8CE;
+}
+
+.product__details--review-reviews {
+  font-size: 14px;
+  font-family: 'Proxima Nova Rg';
+  color: #C1C8CE;
+  margin: 0 10px 0 10px;
+}
+
+.product__details--review-button {
+  font-size: 14px;
+  font-family: 'Proxima Nova Rg';
+}
+
+.product__details--review-button a {
+  color: #33A0FF;
+  text-decoration: none;
+}
+
+.product__details--review-button a:hover {
+  color: white;
+}
+
+.product__details--review-button:hover {
+  background-color: #33A0FF;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.product__details--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-family: 'Proxima Nova Rg';
+  margin-top: 10px;
+}
+
+.product__details--price-discounted {
+  color: #FD2E2E;
+}
+
+.product__details--price-original {
+  margin-left: 15px;
+  color: #E5E5E5;
+  text-decoration: line-through;
+}
+
+.product__details--text {
+  width: 500px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Rg';
+}
+
+.product__details--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.product__details--buttons-cart {
+  background-color: #ddeafd;
+  padding: 10px;
+  border-radius: 10px;
+  color: #33A0FF;
+}
+
+.product__details--buttons-cart:hover {
+  background-color: #33A0FF;
+  color: #ddeafd;
+  cursor: pointer;
+}
+
+.product__details--buttons-favorite {
+  background-color: #ddeafd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #33A0FF;
+}
+
+.product__details--buttons-favorite:hover {
+  background-color: #33A0FF;
+  color: #ddeafd;
+  cursor: pointer;
+}
+
+.container-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F6F7F8;
+  font-family: 'Proxima Nova Rg';
+  color: #22262A;
+  margin-top: 30px;
+}
+
+.container-page .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-page .page-1 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-1:hover {
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-2 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-2:hover {
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-3 {
+  height: 100%;
+  width: 60px;
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-4 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-4:hover {
+  background-color: #22262A;
+  color: white;
+}
+
+.container-page .page-5 {
+  height: 100%;
+  width: 60px;
+}
+
+.container-page .page-5:hover {
+  background-color: #22262A;
+  color: white;
+}
+/*# sourceMappingURL=product.css.map */

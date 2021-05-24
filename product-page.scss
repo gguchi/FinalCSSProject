@@ -3,6 +3,9 @@
 @import "_news.scss";
 @import "_featured.scss";
 
+$pink:#E14491;
+$orange:#D4A9A5;
+
 $body-margin: 0px 350px 0 350px;
 $div-padding: 0px 350px 0 350px;
 $marker: 1px solid black;
@@ -14,6 +17,12 @@ body{
 
     font-family: $family;
 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .header{
@@ -388,6 +397,7 @@ $tab: #F1F3F4;
 
         &--color {
             font-family: 'Proxima Nova Rg';
+            height: 15px;
             font-size: 14px;
             color: $product-details;
             font-weight: bold;
@@ -414,7 +424,24 @@ $tab: #F1F3F4;
 
                     &:hover {
                         border: 2px solid white;
-                        box-shadow:0 0 0 2px rgb(241, 109, 109);
+                        box-shadow:0 0 0 2px rgb(252, 0, 0);
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+
+                &__pink {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color:pink;
+                    margin-left: 10px;
+
+                    &:hover {
+                        border: 2px solid white;
+                        box-shadow:0 0 0 2px rgb(255, 149, 149);
+                        height: 10px;
+                        width: 10px;
                     }
                 }
 
@@ -428,19 +455,63 @@ $tab: #F1F3F4;
                     &:hover {
                         border: 2px solid white;
                         box-shadow:0 0 0 2px black;
+                        width: 10px;
+                        height: 10px;
                     }
                 }
 
-                &__yellow {
+                &__white {
                     height: 15px;
                     width: 15px;
                     border-radius: 50%;
-                    background-color: yellow;
+                    background-color: white;
                     margin-left: 10px;
 
                     &:hover {
                         border: 2px solid white;
                         box-shadow:0 0 0 2px rgb(248, 248, 143);
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+                &__brown {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: brown;
+                    margin-left: 10px;
+
+                    &:hover {
+                        border: 2px solid white;
+                        box-shadow:0 0 0 2px rgb(248, 198, 151);
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+
+                &__pink {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: $pink;
+                    margin-left: 10px;
+
+                    &:hover {
+                        border: 2px solid white;
+                        box-shadow:0 0 0 2px #e075a9;
+                    }
+                }
+
+                &__orange {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: $orange;
+                    margin-left: 10px;
+
+                    &:hover {
+                        border: 2px solid white;
+                        box-shadow:0 0 0 2px #d3d3d3;
                     }
                 }
             }
@@ -479,18 +550,39 @@ $tab: #F1F3F4;
         
                     &--minus {
                         color: $product-border-blue;
+                        height: 100%;       
                         font-size: 8px;
+                        border: none;
+                        background: none;
                     }
                     
                     &--count {
+                        display: flex;
                         font-family: 'Proxima Nova Rg';
+                        width: 20px;
                         font-size: 16px;
                         color: $product-details;
+                        justify-content: center;
+                        align-items: center;
+
+                        input{
+
+                            display: flex;
+                            border: 1px solid transparent;
+                            width: 20px;
+                            background-color: $product-button-bg;
+                            align-content: center;
+
+                        }
+
                     }
                     
                     &--plus {
                         color: $product-border-blue;
+                        height: 100%;
                         font-size: 8px;
+                        border: none;
+                        background: none;
                     }
                 }
             }
@@ -732,8 +824,7 @@ $tab: #F1F3F4;
         padding-right: 50px;
     }
 
-    &__unit {
-    }
+    // &__unit { }
 }
 
 .product_banner{
