@@ -53,10 +53,6 @@ body {
           align-items: center;
 }
 
-.main_container .non_form .company_logo .links {
-  height: 50px;
-}
-
 .main_container .non_form .company_logo a {
   text-decoration: none;
   color: #a83232;
@@ -64,6 +60,12 @@ body {
 
 .main_container .non_form .company_logo .first {
   color: white;
+}
+
+.main_container .non_form .company_logo .home__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main_container .non_form .bar {

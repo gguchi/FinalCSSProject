@@ -62,6 +62,12 @@ body {
   color: white;
 }
 
+.main_container .non_form .company_logo .home__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .main_container .non_form .bar {
   position: relative;
   top: -25px;
