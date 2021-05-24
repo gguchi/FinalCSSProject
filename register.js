@@ -23,21 +23,3 @@ signUp.addEventListener("click", () => {
     // alert(name.value);
 
 });
-
-function loadDoc(){
-
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.onreadystatechange = function(){
-
-        if(xhttp.readyState == 4 && xhttp.status == 200){
-
-            document.getElementById("demo").innerHTML = xhttp.responseText;
-        }
-
-    };
-
-    xhttp.open("GET", "https://www.reddit.com/r/aww.json", true);
-    xhttp.send();
-
-}
