@@ -19,3 +19,4 @@ btnSubtract.addEventListener('click', () =>{
         number.value = parseInt(number.value);
     }
 });
+

@@ -34,13 +34,15 @@
                             <a href="sign-in.html"> Log In</a>
                         </div>
                     </div>
+
+                    <form action="">
                     <div class="input__name">
                         <label for="name">Full Name</label>
                         <input type="text" name= "name" class="user__name">
                     </div>
                     <div class="input__email">
                         <label for="email">Email</label>
-                        <input type="text" name= "email" class="user__email">
+                        <input type="email" name= "email" class="user__email" required>
                     </div>
                     <div class="input__password">
                         <label for="password">Password</label>
@@ -51,7 +53,8 @@
                         <p>Sign up for email updates.</p>
                     </div>
                     <input type="submit" class="sign__up" value="SIGN UP">
-                    <input type="submit" class="sign__up" value="TEST" onclick="loadDoc()">
+                    </form>
+                    <!-- <input type="submit" class="sign__up" value="TEST" onclick="loadDoc()"> -->
                     <p class="terms_agreement">By continuing, you agree to accept our Privacy Polic & Terms of Service.</p>
                     
                     <div id="demo"></div>
