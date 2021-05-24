@@ -52,13 +52,6 @@ body{
             margin-right: 20px;
             font-weight: bolder;
 
-            a{
-
-                text-decoration: none;
-                color: black;
-
-            }
-
         }
 
         .basket {
@@ -67,15 +60,14 @@ body{
             font-weight: bolder;
 
             i{
+
                 margin-right: 5px;
                 font-size: 14px;
+
             }
 
-            a{
-                color: black;
-                font-size: 14px;
+            a {
                 text-decoration: none;
-                list-style-type: none;
             }
 
             .cost{
